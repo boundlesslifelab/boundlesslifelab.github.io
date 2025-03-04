@@ -1,32 +1,36 @@
 ---
-layout: default
-title: "From Intention to Impact: Goal Setting Workshop"
+layout: page
+title: "Goal-Setting Workshop: From Intention to Impact"
+permalink: /
 ---
 
-# **From Intention to Impact**
+<div style="max-width: 800px; margin: 0 auto; padding: 20px;">
+
+# 🚀 Welcome to the Goal-Setting Workshop
+
+## Unlock Your Full Potential
+
+Join us for a transformative experience where you’ll learn to set meaningful goals, align them with your life pillars, and create a sustainable review system to stay on track.
 
 <img src="https://i.imgur.com/ZYQaFv2.jpeg" alt="Goal Setting" width="300" height="300">
 
+## What You’ll Gain
+- Clarity on your life’s core intentions.
+- A structured framework to set and track goals.
+- Practical strategies for weekly, monthly, and quarterly reviews.
 
-## **Unlock Your Potential with Purposeful Goal Setting**
+## 🗓 Workshop Flow
+1. **Reflection:** Understand your current goal-setting patterns.
+2. **Intention Setting:** Define your life pillars and areas of focus.
+3. **Goal Creation:** Craft SMART, emotionally connected goals.
+4. **Review System:** Build a habit of regular check-ins and adjustments.
 
-Are you ready to take control of your life and turn your aspirations into tangible results? Join us for a transformative workshop where you’ll learn to align your goals with your core values, build sustainable habits, and create a powerful review system to stay on track.
+## 📩 Stay Updated
+Want to know when the next workshop goes live? Sign up for updates!
 
-### **What You’ll Experience:**
-- 🌱 **Deep Self-Reflection:** Understand your current approach to goal setting and uncover hidden patterns.
-- 🔑 **Life Pillar Discovery:** Define the foundational areas that truly matter to you.
-- 🎯 **Goal-Crafting Frameworks:** Learn the art and science of setting meaningful, achievable goals.
-- 🔍 **Review & Realign:** Create a personalized system for weekly, monthly, and quarterly check-ins to stay focused and adaptable.
+[Sign Up for Notifications](#)
 
-### **Why This Matters:**
-Living with intention is about more than checking boxes — it’s about building a life that energizes and fulfills you. This workshop will equip you with practical tools to bridge the gap between your dreams and daily actions.
-
-### **Ready to Transform Your Life?**
-Stay tuned for more details, or [sign up for early access](#) to be the first to know when we launch!
-
----
-
-🚀 **Let’s turn your intentions into lasting impact.**
+</div>
 
 ---
 
