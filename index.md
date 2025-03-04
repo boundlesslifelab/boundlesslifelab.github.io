@@ -31,6 +31,3 @@ Unlock Your Full Potential! Join us for a transformative experience where you’
 
 Want to know when the next workshop goes live? Sign up for updates! [Sign Up for Notifications](#)
 
----
-
-This should fix the layout and make everything easier to read! Let me know if you’d like me to tweak anything further. 🚀
