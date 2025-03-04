@@ -10,17 +10,15 @@ title: Goal-Setting Workshop - From Intention to Impact
 
 Unlock Your Full Potential! Join us for a transformative experience where you’ll learn to set meaningful goals, align them with your life pillars, and create a sustainable review system to stay on track.
 
----
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/ZYQaFv2.jpeg" alt="Goal Setting" width="300" height="300">
+</div>
 
 ## What You’ll Gain
 
 - Clarity on your life’s core intentions.
 - A structured framework to set and track goals.
 - Practical strategies for weekly, monthly, and quarterly reviews.
-
-<div style="text-align: center;">
-  <img src="https://i.imgur.com/ZYQaFv2.jpeg" alt="Goal Setting" width="300" height="300">
-</div>
 
 ---
 
