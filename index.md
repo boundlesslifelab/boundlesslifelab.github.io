@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Goal-Setting Workshop - From Intention to Impact
+title: Boundless Life Lab
 
 ---
 
