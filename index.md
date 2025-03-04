@@ -1,3 +1,8 @@
+---
+layout: page
+title: Goal-Setting Workshop: From Intention to Impact
+---
+
 # Goal-Setting Workshop: From Intention to Impact
 
 🚀 **Welcome to the Goal-Setting Workshop**
