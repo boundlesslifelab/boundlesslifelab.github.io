@@ -44,11 +44,17 @@ layout: table_wrappers
   {% if site.mermaid %}
     {% include components/mermaid.html %}
   {% endif %}
-  
+
   <div class="floating-toc">
     <h3>Table of Contents</h3>
-    {% include toc.html %}
+    {% if page.has_toc %}
+      {% include toc.html %}
+    {% else %}
+      <p>No TOC available for this page.</p>
+    {% endif %}
   </div>
   {{ content }}
+
+  
 </body>
 </html>
