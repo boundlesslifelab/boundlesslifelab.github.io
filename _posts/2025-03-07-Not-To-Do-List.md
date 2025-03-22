@@ -1,5 +1,6 @@
 ---
 title: Not-To-Do List
+layout: post
 date: 2025-03-07
 toc: true
 toc_sticky: true
