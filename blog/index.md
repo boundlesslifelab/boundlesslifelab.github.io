@@ -6,14 +6,11 @@ layout: default
 
 # 📝 Blog
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-
+<ul style="border-left: 2px solid #ddd; padding-left: 20px; list-style: none;">
 {% for post in site.posts %}
-<div style="border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-  <p><em>{{ post.date | date: "%B %d, %Y" }}</em></p>
-  <p>{{ post.excerpt }}</p>
-</div>
+  <li>
+    <strong>{{ post.date | date: "%B %d, %Y" }}</strong> <br>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
 {% endfor %}
-
-</div>
+</ul>
