@@ -1,5 +1,9 @@
 <ul>
-  {% for item in page.toc %}
-  <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+  {% for item in site.html_pages %}
+    {% if item.url == page.url and item.toc %}
+      {% for entry in item.toc %}
+        <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+      {% endfor %}
+    {% endif %}
   {% endfor %}
 </ul>
