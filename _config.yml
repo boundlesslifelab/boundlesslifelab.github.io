@@ -206,5 +206,6 @@ compress_html:
 
 just_the_docs:
   toc: true
+  has_toc: true
   toc_sticky: true
   toc_levels: "2,3"  # Controls which headings appear
