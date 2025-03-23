@@ -9,9 +9,9 @@ layout: table_wrappers
 <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
 <body>
 
-{% if page.toc %}
+{% if page.has_toc %}
   <div class="floating-toc">
-    {{ page.toc }}
+    {% include toc.html %}
   </div>
 {% endif %}
   
