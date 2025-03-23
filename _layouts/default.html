@@ -8,6 +8,9 @@ layout: table_wrappers
 {% include head.html %}
 <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
 <body>
+
+{% include toc.html %}
+  
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
   {% include icons/icons.html %}
   {% if page.nav_enabled == true %}
@@ -45,15 +48,7 @@ layout: table_wrappers
     {% include components/mermaid.html %}
   {% endif %}
 
-  <div class="floating-toc">
-    <h3>Table of Contents</h3>
-    {% if page.has_toc %}
-      {% include toc.html %}
-    {% else %}
-      <p>No TOC available for this page.</p>
-    {% endif %}
-  </div>
-  {{ content }}
+  
 
   
 </body>
