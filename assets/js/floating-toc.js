@@ -30,14 +30,30 @@ document.addEventListener('DOMContentLoaded', function() {
     
     listItem.appendChild(link);
     tocList.appendChild(listItem);
-    
-    // Highlight active section on scroll
-    link.addEventListener('click', function(e) {
+  });
+  
+  // Fix for scroll behavior
+  tocList.addEventListener('click', function(e) {
+    if (e.target.tagName === 'A') {
       e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
+      const targetId = e.target.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        // Get the sticky header height if it exists
+        const header = document.querySelector('.site-header') || document.querySelector('header');
+        const headerHeight = header ? header.offsetHeight : 0;
+        
+        // Calculate position with offset for header
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+        
+        // Scroll to the target position
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
   });
   
   // Highlight active section on scroll
