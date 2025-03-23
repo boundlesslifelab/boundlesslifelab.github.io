@@ -1,10 +1,8 @@
 <div class="floating-toc">
   <h3>Table of Contents</h3>
-  <nav>
-    {% for item in site.html_pages %}
-      {% if item.url == page.url %}
-        {{ item.toc | markdownify }}
-      {% endif %}
-    {% endfor %}
-  </nav>
+  {% if page.toc %}
+    {{ page.toc | markdownify }}
+  {% else %}
+    <p>No TOC available.</p>
+  {% endif %}
 </div>
