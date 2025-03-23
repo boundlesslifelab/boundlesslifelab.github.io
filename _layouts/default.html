@@ -8,12 +8,12 @@ layout: table_wrappers
 {% include head.html %}
 <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
 <body>
-
-{% if page.has_toc %}
-  <div class="floating-toc">
-    {% include toc.html %}
-  </div>
+  
+{% if page.toc %}
+  {% include floating-toc.html %}
 {% endif %}
+
+<script src="{{ '/assets/js/floating-toc.js' | relative_url }}"></script>
   
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
   {% include icons/icons.html %}
