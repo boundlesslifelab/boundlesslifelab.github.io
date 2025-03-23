@@ -11,7 +11,6 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   background-color: #fafafa;
   font-size: 0.8rem;
-  z-index: 10;
   
   @media (max-width: 1064px) {
     display: none;
@@ -27,7 +26,6 @@
   letter-spacing: 0.5px;
   border-bottom: 1px solid #eeebee;
   padding-bottom: 0.5rem;
-  display: block; /* Ensure this is displayed as block */
 }
 
 .floating-toc-list {
@@ -50,26 +48,7 @@
   padding: 0.2rem 0;
 }
 
-/* H1 styling - most prominent */
-.floating-toc-list li.toc-h1 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.floating-toc-list li.toc-h1:first-child {
-  margin-top: 0;
-}
-
-.floating-toc-list li.toc-h1 > a {
-  font-weight: 800;
-  color: #222222;
-  font-size: 0.85rem;
-  letter-spacing: 0.3px;
-  padding-bottom: 0.3rem;
-  border-bottom: 1px dashed #eeebee;
-}
-
-/* H2 styling - second level headings */
+/* Significantly enhanced H2 styling */
 .floating-toc-list li.toc-h2 {
   margin-top: 0.5rem;
 }
@@ -85,7 +64,6 @@
   letter-spacing: 0.2px;
 }
 
-/* Hover and active states */
 .floating-toc-list li a:hover {
   color: #27262b;
   text-decoration: underline;
@@ -93,20 +71,15 @@
 
 .floating-toc-list li.active > a {
   color: #2c84fa;
-}
-
-.floating-toc-list li.toc-h1.active > a {
-  font-weight: 800;
-  color: #2c84fa;
+  font-weight: 500;
 }
 
 .floating-toc-list li.toc-h2.active > a {
   font-weight: 700;
-  color: #2c84fa;
 }
 
-.floating-toc-list li.toc-h3.active > a,
-.floating-toc-list li.toc-h4.active > a {
-  font-weight: 500;
-  color: #2c84fa;
+.floating-toc-list li ul {
+  padding-left: 0.5rem;
+  margin-top: 0.25rem;
+  list-style: none;
 }
