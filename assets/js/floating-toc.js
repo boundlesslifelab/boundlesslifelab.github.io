@@ -17,15 +17,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     const listItem = document.createElement('li');
+    const headingTag = heading.tagName.toLowerCase();
+    // Add class based on heading level
+    listItem.classList.add('toc-' + headingTag);
+    
     const link = document.createElement('a');
     link.href = '#' + heading.id;
     link.textContent = heading.textContent;
     
     // Add different padding based on heading level
-    if (heading.tagName === 'H3') {
-      listItem.style.paddingLeft = '1rem';
-    } else if (heading.tagName === 'H4') {
-      listItem.style.paddingLeft = '2rem';
+    if (headingTag === 'h3') {
+      listItem.style.paddingLeft = '0.75rem';
+    } else if (headingTag === 'h4') {
+      listItem.style.paddingLeft = '1.5rem';
     }
     
     listItem.appendChild(link);
