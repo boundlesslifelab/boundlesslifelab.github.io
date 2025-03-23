@@ -205,3 +205,4 @@ compress_html:
   #   envs: all
 
 toc: true
+nav_order: true
