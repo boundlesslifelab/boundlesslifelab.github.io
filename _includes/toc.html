@@ -1,9 +1,9 @@
-<ul>
-  {% for item in site.html_pages %}
-    {% if item.url == page.url and item.toc %}
-      {% for entry in item.toc %}
-        <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
-      {% endfor %}
-    {% endif %}
-  {% endfor %}
-</ul>
+{% if page.toc %}
+  <ul>
+    {% for entry in page.toc %}
+      <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>⚠️ No TOC generated.</p>
+{% endif %}
