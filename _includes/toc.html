@@ -1,12 +1,8 @@
-{% if page.toc %}
-  <div class="floating-toc">
-    <h3>Table of Contents</h3>
-    <ul>
-      {% for entry in page.toc %}
-        <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-{% else %}
-  <p>⚠️ No TOC generated</p>
-{% endif %}
+<div class="floating-toc">
+  <h3>Table of Contents</h3>
+  {% if page.toc %}
+    {{ page.toc }}
+  {% else %}
+    <p>No TOC available.</p>
+  {% endif %}
+</div>
