@@ -5,8 +5,11 @@
   float: right;
   width: 240px;
   margin-left: 1rem;
-  padding: 1rem;
-  border-left: 1px solid #eeebee;
+  padding: 1.25rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
   font-size: 0.8rem;
   
   @media (max-width: 1064px) {
@@ -15,11 +18,14 @@
 }
 
 .floating-toc-label {
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
   text-transform: uppercase;
   font-size: 0.7rem;
-  color: #979797;
+  color: #555555;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #eeebee;
+  padding-bottom: 0.5rem;
 }
 
 .floating-toc-list {
@@ -38,12 +44,24 @@
   color: #5c5962;
   text-decoration: none;
   font-size: 0.75rem;
+  display: block;
+  padding: 0.2rem 0;
 }
 
-/* New styles for h2 entries */
+/* Significantly enhanced H2 styling */
+.floating-toc-list li.toc-h2 {
+  margin-top: 0.5rem;
+}
+
+.floating-toc-list li.toc-h2:first-child {
+  margin-top: 0;
+}
+
 .floating-toc-list li.toc-h2 > a {
-  font-weight: 600; /* Make h2 entries bolder */
-  color: #444444; /* Slightly darker color for h2 entries */
+  font-weight: 700;
+  color: #333333;
+  font-size: 0.8rem;
+  letter-spacing: 0.2px;
 }
 
 .floating-toc-list li a:hover {
@@ -54,6 +72,10 @@
 .floating-toc-list li.active > a {
   color: #2c84fa;
   font-weight: 500;
+}
+
+.floating-toc-list li.toc-h2.active > a {
+  font-weight: 700;
 }
 
 .floating-toc-list li ul {
