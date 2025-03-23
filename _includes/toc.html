@@ -1,7 +1,7 @@
 <div class="floating-toc">
   <h3>Table of Contents</h3>
-  {% if content contains '<h2' or content contains '<h3' %}
-    {{ content | toc }}
+  {% if page.has_toc %}
+    {% include toc-list.html %}
   {% else %}
     <p>No TOC available.</p>
   {% endif %}
