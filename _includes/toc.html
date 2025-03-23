@@ -1,9 +1,8 @@
-{% assign toc_html = content | toc %}
-{% if toc_html != "" %}
-  <div class="floating-toc">
-    <h3>Table of Contents</h3>
-    {{ toc_html }}
-  </div>
-{% else %}
-  <p>No TOC available.</p>
-{% endif %}
+<div class="floating-toc">
+  <h3>Table of Contents</h3>
+  {% if content contains '<h2' or content contains '<h3' %}
+    {{ content | toc }}
+  {% else %}
+    <p>No TOC available.</p>
+  {% endif %}
+</div>
