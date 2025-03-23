@@ -188,7 +188,6 @@ plugins:
   - jekyll-github-metadata
   - jekyll-include-cache
   - jekyll-sitemap
-  - jekyll-toc
 
 kramdown:
   syntax_highlighter_opts:
@@ -206,10 +205,3 @@ compress_html:
   #   envs: all
 
 toc: true
-has_toc: true
-toc_sticky: true
-
-toc:
-  min_level: 2
-  max_level: 3
-  list_class: toc
