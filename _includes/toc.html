@@ -1,8 +1,9 @@
-<div class="floating-toc">
-  <h3>Table of Contents</h3>
-  {% if page.toc %}
-    {{ page.toc | markdownify }}
-  {% else %}
-    <p>No TOC available.</p>
-  {% endif %}
-</div>
+{% assign toc_html = content | toc %}
+{% if toc_html != "" %}
+  <div class="floating-toc">
+    <h3>Table of Contents</h3>
+    {{ toc_html }}
+  </div>
+{% else %}
+  <p>No TOC available.</p>
+{% endif %}
