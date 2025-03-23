@@ -209,3 +209,7 @@ toc: true
 has_toc: true
 toc_sticky: true
 
+toc:
+  min_level: 2
+  max_level: 3
+  list_class: toc
