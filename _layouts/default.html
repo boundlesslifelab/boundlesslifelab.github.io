@@ -9,7 +9,9 @@ layout: table_wrappers
 <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
 <body>
 
-{% include toc.html %}
+<div class="floating-toc">
+  {% toc %}
+</div>
   
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
   {% include icons/icons.html %}
