@@ -212,34 +212,22 @@ Every time you avoid a distraction, you’re casting a vote for a more focused, 
 ---
 
 ```
-<h2>🚫 My Not-To-Do List</h2>
+## 🚫 My Not-To-Do List
+--------------------
 
-<h3>Things That Drain My Energy</h3>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
+### Things That Drain My Energy
 
-<h3>Time Wasters to Avoid</h3>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
+### Time Wasters to Avoid
 
-<h3>Focus Protectors (Non-Negotiables)</h3>
-<ul>
-    <li>No meetings without a clear agenda</li>
-    <li>No phone notifications except for calls & texts</li>
-    <li></li>
-</ul>
+### Focus Protectors (Non-Negotiables)
 
-<h3>Reminders to Stay on Track</h3>
-<ul>
-    <li>It’s okay to say no</li>
-    <li>Progress, not perfection — aim for 80%</li>
-</ul>
+*   No meetings without a clear agenda
+*   No phone notifications except for calls & texts
+
+### Reminders to Stay on Track
+
+*   It’s okay to say no
+*   Progress, not perfection — aim for 80%
 
 ```
 
