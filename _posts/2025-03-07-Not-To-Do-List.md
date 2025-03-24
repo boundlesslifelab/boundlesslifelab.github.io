@@ -30,7 +30,7 @@ So, let’s talk about building a Not-To-Do List. It’s a simple tool to help y
 
 ---
 
-# **Why a Not-To-Do List is Essential:**
+## **Why a Not-To-Do List is Essential:**
 
 We’re all pretty good at adding things to our to-do lists. But what if the real secret to getting more done is doing *less*?
 
@@ -38,7 +38,7 @@ A Not-To-Do List isn’t just about avoiding bad habits. It’s about protecting
 
 Here’s why it works:
 
-## 1. It Protects Your Focus
+1. It Protects Your Focus
 
 Every extra task, random meeting, or notification drags you away from what actually matters. When you decide ahead of time what you *won’t* do, it’s easier to stay on track.
 
@@ -48,7 +48,7 @@ Tim Ferriss says:
 
 Imagine how much more you could accomplish if you stopped checking your phone every 10 minutes.
 
-## 2. Save your mental energy
+2. Save your mental energy
 
 Do you get tired just deciding what to eat for dinner? That’s decision fatigue — and it happens all day long.
 
@@ -56,7 +56,7 @@ A Not-To-Do List helps by cutting out choices you don’t need to make, so you s
 
 Steve Jobs wore the same outfit every day to avoid wasting mental energy. You don’t need a black turtleneck — just a few “never do this” rules can make a big difference.
 
-## **3. It Gives You Permission to Say No**
+**3. It Gives You Permission to Say No**
 
 Saying no is hard. But when it’s written down as a rule, it gets easier. Suddenly, declining that random Meeting invite feels less awkward — you’re just sticking to your Not-To-Do List.
 
@@ -73,11 +73,11 @@ Ofcourse, It’s easier said than done, but the more you practice, the easier it
 ---
 
 
-# **Real-Life Examples of a Not-To-Do List**
+## **Real-Life Examples of a Not-To-Do List**
 
 Let’s get practical. A Not-To-Do List works best when it's tailored to your life.But sometimes, it helps to see real examples. Here are a few from my own list that made a big difference for me..
 
-## **1. No to News**
+### **1. No to News**
 
 A few years ago, I quit reading the news. It felt weird at first, but over time, I felt calmer and more focused. Here’s why.  
 - **News Drains Your Attention**
@@ -105,7 +105,7 @@ Without the noise, I focus on what I *can* control. If quitting the news feels t
 
 
 
-## **2. No to Non-Productive Meetings**
+### **2. No to Non-Productive Meetings**
 
 In the corporate world, Meetings are sneaky time thieves. Especially the ones with no agenda or clear purpose.
 
@@ -129,7 +129,7 @@ So whether you can decline outright or just push for more clarity, every step he
 
 
 
-## **3. No to Phone Notifications**
+### **3. No to Phone Notifications**
 
 Having notifications turned on is like handing your attention to random apps. It shatters your focus and traps you in reaction mode all day.
 My rule is simple. From 9am to 7pm:
@@ -139,7 +139,7 @@ My rule is simple. From 9am to 7pm:
 If something’s truly urgent, people can call. Otherwise, I check apps on my schedule — not whenever they buzz.
 
 
-## **4. No to Junk Food**
+### **4. No to Junk Food**
 
 I’m big on fitness, and I realized that eating junk completely messes with my energy, sleep, and mood.
 
@@ -155,13 +155,13 @@ I swear by the Pareto principle - 80/20 rule. I don’t try to be perfect — if
 
 ---
 
-# **How to Build Your Not-To-Do List:**
+## **How to Build Your Not-To-Do List:**
 
 Ready to make your own Not-To-Do List? It’s easier than you think. The point isn’t to list every bad habit — just catch the few things that drain your energy or pull you off track.
 
 Here’s how to get started:
 
-## **1. Notice What Drains Your Energy**
+### **1. Notice What Drains Your Energy**
 
 Think back over the past few weeks. When did you feel tired, stressed, or frustrated? What tasks or habits drained your energy but didn’t give much back?
 
@@ -171,7 +171,7 @@ Ask yourself:
 - When do I catch myself procrastinating the most?
 - What do I complain about regularly?
 
-## **2. Identify Time & Focus Killers**
+### **2. Identify Time & Focus Killers**
 
 Not everything that eats up your time feels bad in the moment. Scrolling social media or binge-watching YouTube can feel relaxing — until you realize you lost two hours.
 
@@ -182,7 +182,7 @@ Be honest with yourself:
 
 The goal isn’t to banish all distractions, but to notice where your time leaks.
 
-## **3. Set Simple, Clear Rules**
+### **3. Set Simple, Clear Rules**
 
 Once you’ve spotted the patterns, turn them into clear, actionable rules. They don’t have to be extreme. Even small tweaks make a big difference over time.
 
@@ -196,7 +196,7 @@ Or:
 
 Simple, specific rules are easier to follow.
 
-## **4. Start Small & Iterate**
+### **4. Start Small & Iterate**
 
 You don’t need a perfect list right away. Start with 3–4 rules that feel most impactful. Stick with them for a few weeks, see how you feel, and adjust as needed.
 Remember: **This isn’t about perfection.** Even following your Not-To-Do List 80% of the time can massively improve your focus and energy.
@@ -206,7 +206,7 @@ As James Clear says:
 
 Every time you avoid a distraction, you’re casting a vote for a more focused, intentional version of yourself.
 
-## **5. Simple Not-To-Do List Template:**
+## Simple Not-To-Do List Template:
 
 
 ---
