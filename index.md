@@ -3,87 +3,496 @@ layout: default
 title: "From Intention to Impact: Goal Setting Workshop"
 ---
 
-# **From Intention to Impact: A Goal Setting Workshop**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Intention to Impact: A Goal Setting Workshop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 auto 30px;
+            display: block;
+        }
+        
+        .intro-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .intro-card h2 {
+            color: #3498db;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .intro-card p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h3 {
+            color: #3498db;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+        
+        .card h4 {
+            color: #2c3e50;
+            margin: 15px 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .card ul {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+        
+        .card ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .card ul li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        
+        .logistics-card {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+        
+        .logistics-card h3 {
+            color: white;
+            border-bottom-color: #4a6583;
+        }
+        
+        .logistics-card p {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .cta-card {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-card h3 {
+            color: white;
+            border-bottom-color: #5dade2;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: #3498db;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #f5f5f5;
+            transform: scale(1.05);
+        }
+        
+        .questions-card {
+            text-align: center;
+        }
+        
+        .questions-card a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .questions-card a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Nested module cards styling */
+        .module-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .module-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.2s ease;
+        }
+        
+        .module-card:nth-child(1) {
+            background-color: #fff8e1;
+            border-left-color: #ffc107;
+        }
+        
+        .module-card:nth-child(2) {
+            background-color: #f5f5f5;
+            border-left-color: #9e9e9e;
+        }
+        
+        .module-card:nth-child(3) {
+            background-color: #e1f5fe;
+            border-left-color: #03a9f4;
+        }
+        
+        .module-card:nth-child(4) {
+            background-color: #f8e5e5;
+            border-left-color: #e57373;
+        }
+        
+        .module-card:hover {
+            transform: translateX(5px);
+        }
+        
+        .module-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .module-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .module-content {
+            font-size: 0.95rem;
+        }
+        
+        /* Enhanced Host cards styling */
+        .hosts-section-title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .hosts-section-title:after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: #3498db;
+            margin: 10px auto 0;
+        }
+        
+.host-image {
+    width: 220px;  /* Increased from 180px */
+    height: 220px;  /* Increased from 180px */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 35px;  /* Increased from 25px */
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
 
-<img src="https://i.imgur.com/DyxtY0J.jpeg" alt="Goal Setting" width="800" height="400">
+.host-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding-top: 60px;  /* Increased from 40px */
+    position: relative;
+}
 
----
+/* Add more space between host cards if necessary */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;  /* Increased from 25px */
+    margin-bottom: 40px;  /* Increased from 30px */
+}
 
-## **Transform Your Goals into Actionable Results**
-
-Are you looking to achieve your goals in a more structured and meaningful way? Whether you’re aiming for personal growth, professional success, or a better work-life balance, this workshop is designed to help you bridge the gap between intention and action.
-
-Join us for **From Intention to Impact**, a hands-on workshop where you’ll learn how to set purposeful goals, align them with your core values, and create a sustainable system to track your progress.
-
----
-
-## **What You’ll Learn**
-
-### **1. Deep Self-Reflection**  
-- Understand your current approach to goal setting.  
-- Identify what’s working and where you need support.  
-
-### **2. Define Your Life Pillars**  
-- Discover the foundational areas that matter most to you (e.g., health, career, relationships).  
-- Align your goals with what truly energizes and fulfills you.  
-
-### **3. Craft Meaningful Goals**  
-- Learn proven frameworks like **SMART goals** to set clear, actionable objectives.  
-- Turn your intentions into specific, measurable, and achievable steps.  
-
-### **4. Build a Sustainable Review System**  
-- Create a personalized system for **weekly, monthly, and quarterly reviews**.  
-- Stay on track, adapt to challenges, and celebrate your progress.  
-
----
-
-## **Workshop Agenda**
-
-### **Part 1: Introduction & Defining Life Pillars**  
-- Reflect on your current goal-setting habits.  
-- Identify your life pillars and key areas of focus.  
-
-### **Part 2: Goal Setting — From Intention to Action**  
-- Learn the art and science of effective goal setting.  
-- Turn your intentions into actionable, meaningful goals.  
-
-### **Part 3: Staying on Track — Reviews & Accountability**  
-- Build a review system to track progress and stay aligned with your goals.  
-- Learn how to handle distractions and adapt to changes.  
-
----
-
-## **Who Should Attend?**
-
-This workshop is for anyone who:  
-- Wants to achieve personal or professional goals in a structured way.  
-- Feels stuck or overwhelmed by their current goal-setting process.  
-- Is looking for a system to stay accountable and track progress over time.  
-
----
-
-## **Workshop Logistics**
-
-- **Date:** 5th April, 2025  
-- **Time:** 11am to 3:30pm
-- **Location:** Cyber City, Gurgaon
-
----
-
-## **Ready to Join Us?**
-
-Spaces are limited, so reserve your spot today!  
-
-[Sign Up Now](hello@boundlesslifelab.com)  
-
----
-
-## **Have Questions?**
-
-If you’re unsure if this workshop is right for you, feel free to reach out to us at [hello@boundlesslifelab.com]. We’d be happy to help!  
-
----
-
-🚀 **Let’s turn your intentions into lasting impact.**  
-
----
+/* Ensure proper spacing for the host info */
+.host-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;  /* Increased from 15px */
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+        
+        .host-name:after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #3498db;
+            margin: 8px auto 0;
+        }
+        
+        .host-card ul {
+            width: 100%;
+            max-width: 280px;
+        }
+        
+        .host-card ul li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .host-card ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-size: 1.2rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Goal Pursuit Workshop : From Intention to Action</h1>
+            <img src="https://i.imgur.com/DyxtY0J.jpeg" alt="Goal Setting" class="hero-image">
+        </header>
+        
+        <section class="intro-card">
+            <h2>Transform Your Goals into Actionable Results</h2>
+            <p>Are you looking to achieve your goals in a more structured and meaningful way? Whether you're aiming for personal growth, professional success, or a better work-life balance, this workshop is designed to help you bridge the gap between intention and action.</p>
+            <p>Our Goal setting and tracking process will give you a structure to solve from the most mundane problems of life to reshaping your health, fitness and finances.</p>
+            <p>Our strategies will help you build a fantastic side hustle, learn a language, pick up a new skill, become a better parent, build an organization and even save a beautiful relationship.</p>
+            <p>Join us for <strong>Goal Pursuit Workshop : From Intention to Action</strong>, a hands-on workshop where you'll learn how to set purposeful goals, align them with your core values, and create a sustainable system to track your progress.</p>
+        </section>
+        
+        <section class="card-container">
+            <div class="card">
+                <h3>What You'll Learn</h3>
+                
+                <h4>1. Deep Self-Reflection</h4>
+                <ul>
+                    <li>Understand your current approach to goal setting.</li>
+                    <li>Identify what's working and where you need support.</li>
+                </ul>
+                
+                <h4>2. Define Your Life Pillars</h4>
+                <ul>
+                    <li>Discover the foundational areas that matter most to you (e.g., health, career, relationships).</li>
+                    <li>Align your goals with what truly energizes and fulfills you.</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>What You'll Learn</h3>
+                
+                <h4>3. Craft Meaningful Goals</h4>
+                <ul>
+                    <li>Learn proven frameworks like <strong>SMART goals</strong> to set clear, actionable objectives.</li>
+                    <li>Turn your intentions into specific, measurable, and achievable steps.</li>
+                </ul>
+                
+                <h4>4. Build a Sustainable Review System</h4>
+                <ul>
+                    <li>Create a personalized system for <strong>weekly, monthly, and quarterly reviews</strong>.</li>
+                    <li>Stay on track, adapt to challenges, and celebrate your progress.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="card-container">
+            <div class="card">
+                <h3>Workshop Agenda</h3>
+                
+                <div class="module-container">
+                    <div class="module-card">
+                        <div class="module-header">MODULE 1 </div>
+                        <div class="module-title">Introduction & Defining Life Pillars</div>
+                        <div class="module-content">
+                            <ul>
+                                <li>Reflect on your current goal-setting habits.</li>
+                                <li>Identify your life pillars and key areas of focus.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="module-card">
+                        <div class="module-header">MODULE 2</div>
+                        <div class="module-title">Goal Setting — From Intention to Action</div>
+                        <div class="module-content">
+                            <ul>
+                                <li>Learn the art and science of effective goal setting.</li>
+                                <li>Turn your intentions into actionable, meaningful goals.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="module-card">
+                        <div class="module-header">MODULE 3</div>
+                        <div class="module-title">Staying on Track — Reviews & Accountability</div>
+                        <div class="module-content">
+                            <ul>
+                                <li>Build a review system to track progress and stay aligned with your goals.</li>
+                                <li>Learn how to handle distractions and adapt to changes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="module-card">
+                        <div class="module-header">MODULE 4</div>
+                        <div class="module-title">Avoid Common Pitfalls: Overthinking</div>
+                        <div class="module-content">
+                            <ul>
+                                <li>Recognize analysis paralysis and decision fatigue.</li>
+                                <li>Learn practical techniques to break perfectionist cycles.</li>
+                                <li>Develop strategies for timely decision-making.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Who Should Attend?</h3>
+                <p>This workshop is for anyone who:</p>
+                <ul>
+                    <li>Wants to achieve personal or professional goals in a structured way.</li>
+                    <li>Feels stuck or overwhelmed by their current goal-setting process.</li>
+                    <li>Is looking for a system to stay accountable and track progress over time.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Enhanced "Meet Your Hosts" Section -->
+        <h2 class="hosts-section-title">Meet Your Hosts</h2>
+        <section class="card-container">
+            <div class="card host-card">
+                <img src="https://i.imgur.com/MrIaeSy.jpeg" alt="Tanya Agarwal" class="host-image">
+                <div class="host-name">Tanya Agarwal</div>
+                <ul>
+                    <li>Business Management Graduate</li>
+                    <li>Worked in Corporate PR and Marketing</li>
+                    <li>GMAT Coach</li>
+                    <li>Owner of popular blog WellthyFit</li>
+                    <li>Fitness Trainer</li>
+                    <li>Mother of two teenagers</li>
+                    <li>Full Marathon Runner</li>
+                </ul>
+            </div>
+            
+            <div class="card host-card">
+                <img src="https://i.imgur.com/mzHZTYa.jpeg" alt="Rishi Sareen" class="host-image">
+                <div class="host-name">Rishi Sareen</div>
+                <ul>
+                    <li>Computer Engineer from NIT Jalandhar</li>
+                    <li>25 years of Corporate Experience</li>
+                    <li>Director at Nokia</li>
+                    <li>Multiple Full Ironman Finisher</li>
+                    <li>Father of two teenagers</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="card-container">
+            <div class="card logistics-card">
+                <h3>Workshop Logistics</h3>
+                <p><strong>Date:</strong> 5th April, 2025</p>
+                <p><strong>Time:</strong> 11am to 3:30pm</p>
+                <p><strong>Location:</strong> Cyber City, Gurgaon</p>
+            </div>
+            
+            <div class="card cta-card">
+                <h3>Ready to Join Us?</h3>
+                <p>Drop us an email to connect.</p>
+                <a href="mailto:hello@boundlesslifelab.com" class="cta-button">Email!</a>
+            </div>
+        </section>
+        
+        <div class="card questions-card">
+            <h3>Have Questions?</h3>
+            <p>If you're unsure if this workshop is right for you, feel free to reach out to us at <a href="mailto:hello@boundlesslifelab.com">hello@boundlesslifelab.com</a>. We'd be happy to help!</p>
+        </div>
+        
+        <footer>
+            <p>© 2025 Boundless Life Lab. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
