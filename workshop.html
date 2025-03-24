@@ -247,39 +247,44 @@
             margin: 10px auto 0;
         }
         
-        .host-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: left;
-            padding-top: 40px;
-            position: relative;
-        }
-        
-        .host-image {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 25px;
-            border: 4px solid #fff;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        
-        .host-card:hover .host-image {
-            transform: scale(1.05);
-        }
-        
-        .host-name {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 15px;
-            text-align: center;
-            width: 100%;
-            position: relative;
-        }
+.host-image {
+    width: 220px;  /* Increased from 180px */
+    height: 220px;  /* Increased from 180px */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 35px;  /* Increased from 25px */
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.host-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding-top: 60px;  /* Increased from 40px */
+    position: relative;
+}
+
+/* Add more space between host cards if necessary */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;  /* Increased from 25px */
+    margin-bottom: 40px;  /* Increased from 30px */
+}
+
+/* Ensure proper spacing for the host info */
+.host-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;  /* Increased from 15px */
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
         
         .host-name:after {
             content: "";
