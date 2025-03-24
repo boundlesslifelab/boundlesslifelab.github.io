@@ -229,6 +229,30 @@
             font-size: 0.95rem;
         }
         
+        /* Host cards styling */
+        .host-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .host-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #3498db;
+        }
+        
+        .host-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
         footer {
             text-align: center;
             padding: 20px;
@@ -343,6 +367,36 @@
                     <li>Wants to achieve personal or professional goals in a structured way.</li>
                     <li>Feels stuck or overwhelmed by their current goal-setting process.</li>
                     <li>Is looking for a system to stay accountable and track progress over time.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- New "Meet Your Hosts" Section -->
+        <section class="card-container">
+            <div class="card host-card">
+                <h3>Meet Your Hosts</h3>
+                <img src="/api/placeholder/150/150" alt="Tanya Agarwal" class="host-image">
+                <div class="host-name">Tanya Agarwal</div>
+                <ul>
+                    <li>Business Management Graduate</li>
+                    <li>Worked in Corporate PR and Marketing</li>
+                    <li>GMAT Coach</li>
+                    <li>Owner of popular blog WellthyFit</li>
+                    <li>Fitness Trainer</li>
+                    <li>Mother of two teenagers</li>
+                    <li>Full Marathon Runner</li>
+                </ul>
+            </div>
+            
+            <div class="card host-card">
+                <h3>Meet Your Hosts</h3>
+                <img src="/api/placeholder/150/150" alt="Rishi Sareen" class="host-image">
+                <div class="host-name">Rishi Sareen</div>
+                <ul>
+                    <li>Computer Engineer from NIT Jalandhar</li>
+                    <li>Director at Nokia with 25 years of corporate experience</li>
+                    <li>Multiple Full Ironman Finisher</li>
+                    <li>Father of two teenagers</li>
                 </ul>
             </div>
         </section>
