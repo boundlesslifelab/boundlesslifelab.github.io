@@ -5,7 +5,7 @@ date: 2025-03-07
 toc: true
 toc_sticky: true
 categories: [general]
-tags: [markdown, obsidian, jekyll]
+
 ---
 
 # **The Life-Changing Power of a Not-To-Do List**
@@ -213,6 +213,7 @@ Every time you avoid a distraction, you’re casting a vote for a more focused, 
 
 <h2>🚫 My Not-To-Do List</h2>
 
+''' 
 <h3>Things That Drain My Energy</h3>
 <ul>
     <li></li>
@@ -239,6 +240,8 @@ Every time you avoid a distraction, you’re casting a vote for a more focused, 
     <li>It’s okay to say no</li>
     <li>Progress, not perfection — aim for 80%</li>
 </ul>
+
+'''
 
 ---
 
