@@ -3,21 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const content = document.querySelector('.main-content');
   if (!content) return;
   
-  // Include h1 headings now
-  const headings = content.querySelectorAll('h1, h2, h3, h4');
+  const headings = content.querySelectorAll('h2, h3, h4');
   if (headings.length === 0) return;
   
   const tocList = document.getElementById('floating-toc-list');
   if (!tocList) return;
   
-  // Clear any existing content
-  tocList.innerHTML = '';
-  
   // Create TOC items
   headings.forEach(function(heading) {
-    // Skip headings that might be hidden or part of other components
-    if (window.getComputedStyle(heading).display === 'none') return;
-    
     // Ensure the heading has an id
     if (!heading.id) {
       heading.id = heading.textContent.toLowerCase().replace(/[^\w]+/g, '-');
@@ -33,10 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
     link.textContent = heading.textContent;
     
     // Add different padding based on heading level
-    if (headingTag === 'h2') {
-      listItem.style.paddingLeft = '0.5rem';
-    } else if (headingTag === 'h3') {
-      listItem.style.paddingLeft = '1rem';
+    if (headingTag === 'h3') {
+      listItem.style.paddingLeft = '0.75rem';
     } else if (headingTag === 'h4') {
       listItem.style.paddingLeft = '1.5rem';
     }
@@ -44,15 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     listItem.appendChild(link);
     tocList.appendChild(listItem);
   });
-  
-  // If no items were added, hide the TOC
-  if (tocList.children.length === 0) {
-    const floatingToc = document.querySelector('.floating-toc');
-    if (floatingToc) {
-      floatingToc.style.display = 'none';
-    }
-    return;
-  }
   
   // Fix for scroll behavior
   tocList.addEventListener('click', function(e) {
@@ -86,9 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     for (let i = headings.length - 1; i >= 0; i--) {
       const heading = headings[i];
-      // Skip hidden headings
-      if (window.getComputedStyle(heading).display === 'none') continue;
-      
       const rect = heading.getBoundingClientRect();
       
       if (rect.top <= 100) {
