@@ -1,46 +1,49 @@
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Montserrat:wght@500&display=swap');
-  
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Cormorant+Garamond:wght@700&display=swap');
+
   /* Hide the original site title if it exists */
   .site-title span {
     display: none;
   }
-  
+
   /* Create a custom header container */
   .custom-header {
     display: flex;
-    align-items: left;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
     padding: 0.5rem 1rem;
     border-bottom: 1px solid #eeebee;
     background-color: white;
   }
-  
+
   /* Style the logo */
   .custom-logo {
     font-size: 2.5rem;
     text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
   }
-  
+
   .custom-logo .boundless {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     color: #2e5d3e;
     margin-right: 0.2rem;
   }
-  
+
   .custom-logo .life-lab {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
     color: #d4af37;
-    font-weight: 500;
   }
-  
+
   /* Style navigation */
   .custom-nav {
     display: flex;
     align-items: center;
   }
-  
+
   .custom-nav a {
     color: #5c5962;
     margin-left: 1.5rem;
@@ -48,36 +51,29 @@
     text-decoration: none !important;
     transition: color 0.2s ease;
   }
-  
+
   .custom-nav a:hover {
     color: #d4af37;
   }
-  
+
   /* Make the header sticky */
   .sticky-header {
     position: sticky;
     top: 0;
     z-index: 100;
   }
-  
-  /* Override any theme-specific header styles that might conflict */
-  .site-header, 
-  .main-header,
-  .main-content-wrap {
-    border-top: none !important;
-  }
-  
+
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .custom-header {
       flex-direction: column;
       align-items: flex-start;
     }
-    
+
     .custom-nav {
       margin-top: 0.5rem;
     }
-    
+
     .custom-nav a {
       margin-left: 0;
       margin-right: 1rem;
@@ -92,29 +88,6 @@
     <span class="life-lab">Life Lab</span>
   </a>
   <div class="custom-nav">
-    <a href="{{ '/blog' | absolute_url }}">     Blog</a>
-    <!-- Add more navigation links here as needed -->
+    <a href="{{ '/blog' | absolute_url }}">Blog</a>
   </div>
 </div>
-
-<!-- Script to handle potential duplicate headers -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // If there's an existing site-header, hide it
-    const existingHeader = document.querySelector('.site-header');
-    if (existingHeader) {
-      existingHeader.style.display = 'none';
-    }
-    
-    // Hide any duplicate blog links
-    const blogLinks = document.querySelectorAll('a[href*="/blog"]');
-    if (blogLinks.length > 1) {
-      // Keep only our custom blog link
-      for (let i = 0; i < blogLinks.length; i++) {
-        if (!blogLinks[i].closest('.custom-nav')) {
-          blogLinks[i].style.display = 'none';
-        }
-      }
-    }
-  });
-</script>
