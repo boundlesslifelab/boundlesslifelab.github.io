@@ -5,7 +5,7 @@ title: "From Intention to Impact: Goal Setting Workshop"
 
 # **From Intention to Impact: A Goal Setting Workshop**
 
-<img src="https://i.imgur.com/DyxtY0J.jpeg" alt="Goal Setting" width="500" height="500">
+<img src="https://i.imgur.com/DyxtY0J.jpeg" alt="Goal Setting" width="800" height="400">
 
 ---
 
