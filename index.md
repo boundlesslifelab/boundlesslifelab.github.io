@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: Home
 title: "From Intention to Impact: Goal Setting Workshop"
 ---
 
