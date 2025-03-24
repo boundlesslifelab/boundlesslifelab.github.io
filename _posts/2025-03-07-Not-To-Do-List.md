@@ -211,9 +211,9 @@ Every time you avoid a distraction, you’re casting a vote for a more focused, 
 
 ---
 
+```
 <h2>🚫 My Not-To-Do List</h2>
 
-''' 
 <h3>Things That Drain My Energy</h3>
 <ul>
     <li></li>
@@ -241,7 +241,7 @@ Every time you avoid a distraction, you’re casting a vote for a more focused, 
     <li>Progress, not perfection — aim for 80%</li>
 </ul>
 
-'''
+```
 
 ---
 
