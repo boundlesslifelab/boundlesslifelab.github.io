@@ -1,52 +1,52 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Cormorant+Garamond:wght@700&display=swap');
 
-  /* Hide the original site title if it exists */
-  .site-title span {
-    display: none;
-  }
-
-  /* Create a custom header container */
+  /* Custom Header */
   .custom-header {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 0.5rem 1rem;
+    position: relative;
+    width: 100%;
+    padding: 0.8rem 1rem;
     border-bottom: 1px solid #eeebee;
     background-color: white;
   }
 
-  /* Style the logo */
+  /* Logo Container */
   .custom-logo {
-    font-size: 2.5rem;
-    text-decoration: none !important;
+    position: absolute;
+    left: 1rem;
     display: flex;
-    align-items: center;
-    margin-right: auto;
+    align-items: baseline;
+    text-decoration: none;
+    font-size: 2rem;
   }
 
+  /* Boundless */
   .custom-logo .boundless {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     color: #2e5d3e;
-    margin-right: 0.2rem;
+    margin-right: 0.3rem;
   }
 
+  /* Life Lab */
   .custom-logo .life-lab {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
+    font-size: 2.2rem;
     color: #d4af37;
+    letter-spacing: 0.5px;
   }
 
-  /* Style navigation */
+  /* Blog Link */
   .custom-nav {
-    display: flex;
-    align-items: center;
+    margin-left: auto;
+    margin-right: 1rem;
   }
 
   .custom-nav a {
     color: #5c5962;
-    margin-left: 1.5rem;
     font-weight: 500;
     text-decoration: none !important;
     transition: color 0.2s ease;
@@ -56,33 +56,19 @@
     color: #d4af37;
   }
 
-  /* Make the header sticky */
-  .sticky-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-
-  /* Responsive adjustments */
+  /* Responsive Fixes */
   @media (max-width: 768px) {
-    .custom-header {
-      flex-direction: column;
-      align-items: flex-start;
+    .custom-logo {
+      font-size: 1.8rem;
     }
-
     .custom-nav {
-      margin-top: 0.5rem;
-    }
-
-    .custom-nav a {
-      margin-left: 0;
-      margin-right: 1rem;
+      margin-right: 0.5rem;
     }
   }
 </style>
 
-<!-- Custom header HTML structure -->
-<div class="custom-header sticky-header">
+<!-- Header HTML -->
+<div class="custom-header">
   <a href="{{ '/' | absolute_url }}" class="custom-logo">
     <span class="boundless">Boundless</span>
     <span class="life-lab">Life Lab</span>
