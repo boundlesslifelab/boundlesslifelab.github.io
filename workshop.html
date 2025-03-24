@@ -70,19 +70,6 @@
             margin-bottom: 30px;
         }
         
-        .content-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            margin-bottom: 30px;
-        }
-        
-        @media (max-width: 768px) {
-            .content-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
         .card {
             background-color: #fff;
             border-radius: 10px;
@@ -263,7 +250,7 @@
             <p>Join us for <strong>From Intention to Impact</strong>, a hands-on workshop where you'll learn how to set purposeful goals, align them with your core values, and create a sustainable system to track your progress.</p>
         </section>
         
-        <section class="content-grid">
+        <section class="card-container">
             <div class="card">
                 <h3>What You'll Learn</h3>
                 
@@ -278,6 +265,10 @@
                     <li>Discover the foundational areas that matter most to you (e.g., health, career, relationships).</li>
                     <li>Align your goals with what truly energizes and fulfills you.</li>
                 </ul>
+            </div>
+            
+            <div class="card">
+                <h3>What You'll Learn</h3>
                 
                 <h4>3. Craft Meaningful Goals</h4>
                 <ul>
@@ -291,7 +282,9 @@
                     <li>Stay on track, adapt to challenges, and celebrate your progress.</li>
                 </ul>
             </div>
-            
+        </section>
+        
+        <section class="card-container">
             <div class="card">
                 <h3>Workshop Agenda</h3>
                 
@@ -342,9 +335,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <section class="card-container">
+            
             <div class="card">
                 <h3>Who Should Attend?</h3>
                 <p>This workshop is for anyone who:</p>
@@ -354,27 +345,27 @@
                     <li>Is looking for a system to stay accountable and track progress over time.</li>
                 </ul>
             </div>
-            
+        </section>
+        
+        <section class="card-container">
             <div class="card logistics-card">
                 <h3>Workshop Logistics</h3>
                 <p><strong>Date:</strong> 5th April, 2025</p>
                 <p><strong>Time:</strong> 11am to 3:30pm</p>
                 <p><strong>Location:</strong> Cyber City, Gurgaon</p>
             </div>
-        </section>
-        
-        <section class="card-container">
+            
             <div class="card cta-card">
                 <h3>Ready to Join Us?</h3>
                 <p>Spaces are limited, so reserve your spot today!</p>
                 <a href="mailto:hello@boundlesslifelab.com" class="cta-button">Sign Up Now</a>
             </div>
-            
-            <div class="card questions-card">
-                <h3>Have Questions?</h3>
-                <p>If you're unsure if this workshop is right for you, feel free to reach out to us at <a href="mailto:hello@boundlesslifelab.com">hello@boundlesslifelab.com</a>. We'd be happy to help!</p>
-            </div>
         </section>
+        
+        <div class="card questions-card">
+            <h3>Have Questions?</h3>
+            <p>If you're unsure if this workshop is right for you, feel free to reach out to us at <a href="mailto:hello@boundlesslifelab.com">hello@boundlesslifelab.com</a>. We'd be happy to help!</p>
+        </div>
         
         <footer>
             <p>© 2025 Boundless Life Lab. All rights reserved.</p>
