@@ -3,7 +3,7 @@ title: "Blog"
 permalink: /blog/
 layout: default
 ---
-# Thoughts
+# Blog Posts
 
 {% for post in site.posts %}
 <div class="blog-card">
@@ -21,7 +21,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h1 {
