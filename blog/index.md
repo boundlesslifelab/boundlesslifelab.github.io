@@ -3,12 +3,12 @@ title: "Blog"
 permalink: /blog/
 layout: default
 ---
-# Blog Posts
+# Thoughts
 
 {% for post in site.posts %}
 <div class="blog-card">
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+  <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
   <a href="{{ post.url }}" class="continue-reading">Continue reading</a>
 </div>
 {% endfor %}
@@ -21,6 +21,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: #333;
+  font-size: 18px;
 }
 
 h1 {
@@ -30,6 +31,7 @@ h1 {
   margin-bottom: 40px;
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
+  font-size: 2.2rem;
 }
 
 .blog-card {
@@ -48,7 +50,7 @@ h1 {
 
 .blog-card h2 {
   margin: 0 0 10px 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
@@ -64,7 +66,7 @@ h1 {
 
 .excerpt {
   margin: 0 0 15px 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #666;
   flex-grow: 1;
 }
@@ -74,9 +76,9 @@ h1 {
   text-decoration: none;
   color: white;
   background-color: #00CED1;  /* Bright turquoise/aqua */
-  padding: 8px 15px;
+  padding: 10px 16px;
   border-radius: 4px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
