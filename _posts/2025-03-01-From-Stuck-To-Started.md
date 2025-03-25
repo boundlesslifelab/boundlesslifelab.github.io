@@ -9,11 +9,9 @@ categories: [general]
 excerpt: "Struggling to set goals? You're not alone. Discover why people avoid goal setting and learn practical strategies to overcome fear, overwhelm, and self-doubt to create the life you truly want."
 ---
 
- # **Why People Avoid Goal Setting (And How to Overcome It)** 
- 
-  ![](https://i.imgur.com/omalMVK.jpeg)
+![](https://i.imgur.com/omalMVK.jpeg)
 
-
+# **Why People Avoid Goal Setting (And How to Overcome It)** 
 
 > _“A goal properly set is halfway reached.”_ — Zig Ziglar
 
