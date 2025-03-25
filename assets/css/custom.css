@@ -83,3 +83,14 @@
   margin-top: 0.25rem;
   list-style: none;
 }
+
+/* Change font size for post content */
+.post-content {
+    font-size: 18px; /* Adjust size as needed */
+}
+
+/* Change font size for all body text */
+body {
+    font-size: 18px; /* Adjust size as needed */
+}
+
