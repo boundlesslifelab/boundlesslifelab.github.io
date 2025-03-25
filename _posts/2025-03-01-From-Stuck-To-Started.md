@@ -47,7 +47,7 @@ The key takeaway? **Failure, setbacks, and challenges are just part of the journ
 
 
 
-### **How to Overcome Fear of Failure:**
+## **How to Overcome Fear of Failure:**
 
 - **Reframe failure:** Stop seeing it as a dead end. View it as valuable feedback. Every misstep is basically a free lesson that's getting you closer to your goal. As Jeff Bezos brilliantly put : **"Many people are experts at success, but amateurs at failure"**
   
