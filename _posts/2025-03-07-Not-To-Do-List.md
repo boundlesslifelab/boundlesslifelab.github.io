@@ -4,7 +4,7 @@ layout: post
 date: 2025-03-07
 toc: true
 toc_sticky: true
-categories: [general]
+excerpt: "Ever feel like your to-do list never ends? Maybe the key isn’t adding more—but doing less. A Not-To-Do List helps you cut distractions and reclaim focus."
 
 ---
 
