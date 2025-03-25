@@ -8,7 +8,7 @@ layout: default
 {% for post in site.posts %}
 <div class="blog-card">
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+  <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
   <a href="{{ post.url }}" class="continue-reading">Continue reading</a>
 </div>
 {% endfor %}
