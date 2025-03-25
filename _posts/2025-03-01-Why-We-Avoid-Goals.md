@@ -33,7 +33,20 @@ Setting a goal means risking failure, and failure stings. So, many people avoid 
 
 ---  
 
+## **Failure Is Just the Beginning**  
+
+- **Walt Disney** – Fired for *“lacking imagination.”* Built Disney after multiple business failures.  
+- **Oprah Winfrey** – Told she was *“unfit for TV.”* Became a media powerhouse. 
+- **J.K. Rowling** – Rejected by publishers. *Harry Potter* became a global phenomenon.  
+- **Steve Jobs** – Fired from Apple, returned to build it into a tech giant.  
+- **Sachin Tendulkar** – Overcame a crippling **tennis elbow injury** to score 100 international centuries.  
+
+The lesson? **Failure isn’t final—quitting is.**  
+
+---  
+
 ## **2. Lack of Clarity**  
+
 > *"If you don’t know where you are going, you’ll end up someplace else."* — Yogi Berra  
 
 Many people don’t set goals because they don’t know what they *actually* want. They think in vague terms—"be successful," "get fit"—but without specifics, these aren’t goals. They’re wishes.  
@@ -67,6 +80,7 @@ Change is uncomfortable. Setting a goal means admitting that something needs to 
 ✅ **Set flexible goals:** Start small, adjust as you go. Just get moving.  
 ✅ **Remember the cost of inaction:** A year from now, you’ll wish you started today.  
 
+![](https://i.imgur.com/ProBftZ.jpeg)
 ---  
 
 ## **5. Past Negative Experiences**  
@@ -99,3 +113,8 @@ Some people think goal setting is unnecessary, believing things will “work out
 Not setting a goal *is* a choice—a choice to stay where you are. The good news? You don’t need to overhaul your life overnight. Just start. Pick one small goal today. Take one action.  
 
 Every big achievement starts with a tiny step. **What’s yours?**  
+
+---  
+
+**You’ve got this.** 🚀  
+
