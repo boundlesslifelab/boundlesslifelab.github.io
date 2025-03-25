@@ -16,7 +16,7 @@
 title: Boundless Life Lab
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://boundlesslifelab.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://boundlesslifelab.com" # the base hostname & protocol for your site, e.g. http://example.com
 repository: just-the-docs/just-the-docs # for github-metadata
 
 permalink: /blog/:title/
