@@ -35,7 +35,7 @@ But here’s the truth: **Failure isn’t the opposite of success—it’s actua
 
 
 
-### Failure is just the beginning
+## Failure is just the beginning
 
 - **Walt Disney** – Was fired from a newspaper for *“lacking imagination”* and had multiple failed businesses before creating Disney.
 - **Oprah Winfrey** – Was told she was *“unfit for television”* early in her career, only to become one of the most influential media moguls ever.
