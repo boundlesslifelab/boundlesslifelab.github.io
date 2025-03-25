@@ -8,7 +8,8 @@ layout: default
 {% for post in site.posts %}
 <div class="blog-card">
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+  <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+  <a href="{{ post.url }}" class="continue-reading">Continue reading</a>
 </div>
 {% endfor %}
 
@@ -37,6 +38,8 @@ h1 {
   padding: 20px;
   margin-bottom: 20px;
   transition: box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-card:hover {
@@ -49,19 +52,36 @@ h1 {
   font-weight: 500;
 }
 
-.blog-card a {
+.blog-card h2 a {
   color: #333;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.blog-card a:hover {
+.blog-card h2 a:hover {
   color: #007ACC;
 }
 
 .excerpt {
-  margin: 0;
+  margin: 0 0 15px 0;
   font-size: 0.9rem;
   color: #666;
+  flex-grow: 1;
+}
+
+.continue-reading {
+  align-self: flex-start;
+  text-decoration: none;
+  color: white;
+  background-color: #00CED1;  /* Bright turquoise/aqua */
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.continue-reading:hover {
+  background-color: #20B2AA;  /* Slightly darker aqua */
+  transform: translateY(-2px);
 }
 </style>
