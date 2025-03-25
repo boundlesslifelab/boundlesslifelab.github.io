@@ -3,7 +3,7 @@ title: "Blog"
 permalink: /blog/
 layout: default
 ---
-# Thoughts
+# Blog Posts
 
 {% for post in site.posts %}
 <div class="blog-card">
