@@ -10,7 +10,9 @@ excerpt: "Success isn’t about what you *want*—it’s about what you’re wil
 ---
 # **The Power of Consistency: The Real Secret Behind Every Success**
 
-You know that iconic moment in _Rocky_—the music kicks in, _Eye of the Tiger_ blares, and Rocky charges up those steps, fists pumping in victory? Chills. Every. Single. Time. That scene screams grit, determination, and intensity.
+You know those stories that just stick with you? Give you chills, fire you up, and make you think, *Damn, I want to do something great too.*
+
+Like that iconic moment in Rocky—the music kicks in, Eye of the Tiger blares, and Rocky charges up those steps, fists pumping in victory. Chills. Every. Single. Time. That scene screams grit, determination, and intensity.
 
 I’ve watched it more times than I can count. Heard that song on repeat during training. It fires you up.
 
@@ -20,7 +22,7 @@ It was **consistency**.
 
 Day in, day out. The grind. The sweat. The relentless push forward when no one was watching. That’s the real game-changer. That’s the secret behind every “overnight” transformation—whether it’s Rocky, Milkha Singh, or anyone who’s ever done something great.
 
-And today, I want to share a few real-life stories that prove just how powerful consistency really is.
+And today, I want to share three real-life stories that prove just how powerful consistency really is.
 
 ## **Chris Nikic: 1% Better Every Day**
 
@@ -28,10 +30,11 @@ Now, let’s talk about something even tougher than a Rocky-style training monta
 
 You know famous race - **Ironman**—a 3.8 km swim, a 180 km bike ride, and a full 42.2 km marathon. Back to back. No breaks. Just an unforgiving race against the clock, the elements, and your own limits. Even for the fittest athletes, it’s brutal. It is often called "**World's toughest single day endurance event**". For good reasons.
 
-Now imagine doing that with **Down syndrome**—a condition that makes even basic motor skills, coordination, and endurance a massive challenge. Doctors said he’d always struggle. That he’d have limits.
+Now imagine doing that with **Down syndrome**—a condition that makes even basic motor skills, coordination, and endurance a massive challenge. 
 Chris was born with Down syndrome and had open-heart surgery at five months old.
-
 He was not able to walk well until he turned four.
+
+Doctors said he’d always struggle. That he’d have limits.
 
 But Chris never used these facts as an excuse to not excel in life.
 
@@ -44,7 +47,9 @@ And that’s how he did the impossible.
 ![](https://i.imgur.com/pkhWVVc.png)
 
 
-In 2020, Chris became the first person with Down syndrome to complete an Ironman. He defied expectations, shattered barriers, and proved that greatness isn’t about talent or genetics. It’s about showing up, putting in the work, and getting just a little better every day.
+In November 2020, just 11 months after beginning his triathlon journey, Chris made history by becoming the first person with Down syndrome to complete an Ironman. 
+He defied expectations, shattered barriers, and proved that greatness isn’t about talent or genetics. 
+It’s about showing up, putting in the work, and getting just a little better every day.
 
 ![](https://i.imgur.com/qHPA6OZ.png)
 
