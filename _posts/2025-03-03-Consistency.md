@@ -69,7 +69,7 @@ His success wasn’t luck—it was the result of showing up, doing the work, and
 
 That’s the real secret behind mastery. And it’s available to anyone willing to put in the reps.
 
-### **Amitabh Bachchan: Reinventing Himself**
+## **Amitabh Bachchan: Reinventing Himself**
 
 James Clear’s story proves that consistency isn’t flashy—it’s not about sudden breakthroughs but about relentless effort over time. And this isn’t just true for writers or athletes; it applies to every field, including one of the toughest industries out there—Bollywood.
 
@@ -89,7 +89,7 @@ Decades later, he’s still at the top of his game. Not because of luck, not bec
 
 That’s the power of consistency.
 
-### **Final Thoughts: The Secret to Success is Boring**
+## **Final Thoughts: The Secret to Success is Boring**
 
 Everybody wants success. Everyone wants to be fit, rich, admired, and respected. To walk into a room and people look up in admiration. To have the dream job, the perfect body, the thriving business, the viral moment.
 
