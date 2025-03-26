@@ -10,6 +10,7 @@ excerpt: "Success isn’t about what you *want*—it’s about what you’re wil
 ---
 # **The Power of Consistency: The Real Secret Behind Every Success**
 
+![](https://i.imgur.com/67hEqyV.png)
 You know those stories that just stick with you? Give you chills, fire you up, and make you think, *Damn, I want to do something great too.*
 
 Like that iconic moment in Rocky—the music kicks in, Eye of the Tiger blares, and Rocky charges up those steps, fists pumping in victory. Chills. Every. Single. Time. That scene screams grit, determination, and intensity.
