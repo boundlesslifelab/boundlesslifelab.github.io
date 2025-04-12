@@ -5,13 +5,7 @@ layout: default
 ---
 # Blog Posts
 
-{% for post in site.posts %}
-<div class="blog-card">
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-  <a href="{{ post.url }}" class="continue-reading">Read More →</a>
-</div>
-{% endfor %}
+
 
 <style>
 :root {
