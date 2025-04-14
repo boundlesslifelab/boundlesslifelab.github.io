@@ -50,10 +50,10 @@ It’s for people who are ready to stop overthinking and start doing.
 
 ## Workshop Basics
 
-**What's this workshop about?**
+### **What's this workshop about?**
  It's about cutting the noise, getting clear on what matters, and building simple systems to stick to it. No fluff. No hype. Just what works.
 
-**What will I walk away with?**
+### **What will I walk away with?**
  By the end of this workshop, you'll have:
 
 - One crystal-clear goal aligned with your true priorities
@@ -61,17 +61,17 @@ It’s for people who are ready to stop overthinking and start doing.
 - Resilience strategies to keep going when motivation fades
 - A practical review system to stay on track and make adjustments
 
-**Is this a motivational session?**
+### **Is this a motivational session?**
  Hell no. Motivation's temporary. This is about clarity, action, and a system you can lean on when you don't feel like it.
 
-**How long is the workshop?**
+### **How long is the workshop?**
  The workshop is divided into three parts, taking approximately 4 hours total with short breaks between sections.
 
 
 
 ## Workshop Content
 
-**What's the structure of the workshop?**
+### **What's the structure of the workshop?**
  Straightforward:
 
 - **Part 1:** Set the right goal - Align your priorities across life pillars — because your life isn't lived in silos
@@ -82,20 +82,37 @@ It’s for people who are ready to stop overthinking and start doing.
 
   
 
-**What methodologies do you use?**
- We incorporate proven frameworks including:
+### **How Does This Actually Work?**
 
-- Warren Buffett's 5/25 Rule for eliminating distractions
+We get it — change is hard, and behavior change is the hardest kind. Most people rely on motivation, but motivation is unreliable. It fades when life gets messy, stress kicks in, or you just don’t feel like it.
 
-- The enhanced SMART+ goal-setting method with emotional connection and flexibility components
+That’s why this isn’t a motivational talk. It’s a doing workshop.
 
-- James Clear's Habit Loop (Cue → Routine → Reward) and Habit Stacking principles
+Big goals need small wins. Small wins need habits. 
 
-- Reverse engineering success through milestone planning
+We do this by:
 
-  
+- **Breaking big, intimidating goals into small, achievable milestones and immediate actions.**
+- **Focusing on regular wins and frequent reviews.** Failure isn’t a flaw — it’s expected. What matters is how fast you adjust, not how perfectly you execute.
+- **“Building habits by tying new actions to things you already do, so they happen on autopilot.”**
+- **Leaning on systems, not willpower.** You’ll design a simple, flexible system you can rely on when your mood, schedule, or motivation turns on you.
 
-**What \*isn't\* this workshop about?**
+**In short: we turn “I should” into “I did” — one doable step at a time.**
+
+
+
+### **What frameworks do you use to back this up?**
+ While the workshop stays practical and action-first, we do borrow from proven frameworks:
+
+- The psychology of **habit loops and behavior triggers**
+- **Milestone-based reverse planning** so you always know your next actionable step
+- **The 5/25 Rule** for ruthless focus and priority management
+- **SMART+ goal setting** — adding emotional connection and flexibility to the old SMART method
+- Simple **weekly and monthly review systems** designed to help you fail fast and recover faster
+
+
+
+### **What \*isn't\* this workshop about?**
 
 - No vision boards
 
@@ -109,47 +126,77 @@ It’s for people who are ready to stop overthinking and start doing.
 
   
 
-**Will we be applying what we learn during the workshop?**
+### **Will we be applying what we learn during the workshop?**
  Absolutely. This is a doing workshop, not just listening. You'll actively work on your goals throughout each session with practical exercises and immediate application.
 
 
 
 ## Participation & Format
 
-**Will there be slides or theory?**
+### **Will there be slides or theory?**
  Yes, there will be slides to support the session. But remember, this is a doing session, not a TED talk.
 
-**Is this a one-time thing or a series?**
+### **Is this a one-time thing or a series?**
  One sharp, high-impact session. You'll walk out with a system, not a sales pitch for a follow-up course.
 
-**What if I already have goals?**
+### **What if I already have goals?**
  Good. We'll see if they still matter, if they're clear, and if you've got a way to follow through when motivation takes a nap. The workshop will help you refine them using our frameworks.
 
-**Do I have to share personal stuff with the group?**
+### **Do I have to share personal stuff with the group?**
  Only if you want to. No forced sharing. No oversharing. Total choice.
 
-**How interactive is the workshop?**
- Very. You'll participate in guided exercises including:
+### **How interactive is the workshop?**
+ Very. You'll participate in many guided exercises including:
 
 - Goal mapping activities
 - Habit-building experiments
 - Accountability partnerships
 - Weekly Reviews
 
-**Do I need to prepare anything beforehand?**
+### **Do I need to prepare anything beforehand?**
  Just come with an open mind and, if possible, some goals you've been thinking about. We'll provide all templates and materials needed during the session.
 
-**Do I need to be in a certain job, role, or phase of life?**
- Nope. Doesn't matter if you're leading a team, launching a business, training for an Ironman, or just tired of drifting. This is for anyone ready to move with purpose.
+### **Do I need to be in a certain job, role, or phase of life?**
+ Nope. Doesn't matter if you're leading a team, launching a business, training for a race, or just tired of drifting. This is for anyone ready to move with purpose.
 
 ## Workshop Leaders
 
-**Who are you, and why are you the right people for this?**
- We've lived this. Not just talked about it. We've built careers, businesses, bodies, and lives by getting clear, setting sharp goals, and sticking to systems when the motivation wore off. This is the stuff we use ourselves, and we're passing it on raw and real.
+### **Who are you, and why are you the right people for this?**
+ Because we don’t just teach this stuff — we live it, through real-life high-stakes goals.
 
-**Will I get support after the workshop?**
+**Tanya** is:
+
+- A highly sought-after **GMAT Coach**, helping professionals crack one of the toughest competitive exams
+- A dedicated runner, completing **multiple half and full marathons every year**
+- A **fitness coach** — maintaining peak fitness while raising two kids and mentoring students
+
+**Rishi** has:
+
+- Completed **4 full Ironman triathlons in the last 5 years** (a 226 km test of mental and physical resilience)
+- Completed a **Finance specialization from New York University**, all while raising two kids and working a full-time job.
+- Built personal systems to juggle endurance training, work, learning, and family life without burning out
+
+We’ve faced the same distractions, doubts, and curveballs you do. This workshop is built on what worked for us — and what still works when motivation inevitably dies.
+
+
+
+### **Why are you doing this?**
+
+Because we know how hard it is to chase big goals when motivation keeps letting you down. We’ve seen people — ourselves included — spend years stuck in cycles of overplanning, waiting for the “right time,” or relying on bursts of willpower that fade fast.
+
+**We’re convinced this works.**
+ We’ve tested these systems in real life — through Ironman races, marathon seasons, career pivots, competitive exams, raising kids, and building businesses. And we’ve seen how breaking big goals into small, winnable actions and backing them with habits can transform how people show up in every part of life.
+
+**We’re doing this because it’s our shared obsession.**
+ We’ve bonded over this exact passion: helping people stop drifting and start doing. This workshop is how we pass that on.
+
+
+
+### **Will I get support after the workshop?**
  The workshop is designed to give you a complete system you can implement independently. However, we'll provide resources you can reference afterward to help reinforce what you've learned.
 
-**How is this different from other goal-setting workshops?**
+
+
+### **How is this different from other goal-setting workshops?**
  We focus on execution, not just inspiration. Many workshops leave you feeling good but without clear next steps. We prioritize practical applications, real-world examples, and creating systems that work even when willpower doesn't.
 
