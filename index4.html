@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Pursuit Workshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a365d;
+            --accent: #e53e3e;
+            --dark: #1a202c;
+            --light: #ffffff;
+            --gray: #718096;
+            --light-gray: #f7fafc;
+            --border: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.5;
+            color: var(--dark);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            padding: 80px 0 60px;
+            position: relative;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: -0.02em;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 30px 0 20px;
+            color: var(--primary);
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 25px 0 15px;
+            color: var(--dark);
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        
+        .tagline {
+            font-size: 1.6rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            color: var(--accent);
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+        
+        .section-divider {
+            height: 4px;
+            width: 80px;
+            background-color: var(--accent);
+            margin: 20px 0;
+        }
+        
+        section {
+            padding: 60px 0;
+            position: relative;
+        }
+        
+        section:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        
+        ul {
+            list-style-type: none;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 24px;
+            font-size: 1rem;
+        }
+        
+        li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        .emphasis {
+            font-weight: 600;
+            color: var(--accent);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 32px;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 600;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+        
+        .faq-answer {
+            color: var(--gray);
+        }
+        
+        .faq-section {
+            margin-bottom: 40px;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .highlight-box {
+            padding: 30px;
+            background-color: white;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+            margin: 30px 0;
+        }
+        
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray);
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        
+        .accent-text {
+            color: var(--accent);
+        }
+        
+        .bold-statement {
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin: 30px 0;
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-content {
+            max-width: 700px;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            font-weight: 500;
+        }
+        
+        .tab.active {
+            border-bottom: 3px solid var(--accent);
+            color: var(--accent);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .two-columns {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.3rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .bold-statement {
+                font-size: 1.2rem;
+            }
+            
+            .tabs {
+                flex-direction: column;
+            }
+            
+            .tab {
+                padding: 10px;
+                border-bottom: 1px solid var(--border);
+            }
+            
+            .tab.active {
+                border-bottom: 1px solid var(--accent);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container hero-content">
+            <h1>Goal Pursuit Workshop</h1>
+            <p class="tagline">Stop Drifting. Start Doing.</p>
+            <div class="section-divider"></div>
+            <p>Most people set goals. Few stick to them. Not because they're lazy or need more motivation. But because they never get clear on what actually matters. And even when they do, they don't have a plan or system to stay consistent when life gets messy.</p>
+            <p>This workshop is built to fix exactly that.</p>
+        </div>
+    </header>
+    
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The <span class="accent-text">Problem</span></h2>
+                <div class="section-divider" style="margin: 15px auto;"></div>
+            </div>
+            
+            <div class="highlight-box">
+                <p class="bold-statement">It's a no-fluff, working session where you'll cut through the noise, set one clear, meaningful goal, and turn it into a plan you can actually follow.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section style="background-color: var(--light-gray);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What You'll <span class="accent-text">Learn</span></h2>
+                <div class="section-divider" style="margin: 15px auto;"></div>
+            </div>
+            
+            <div class="two-columns">
+                <div>
+                    <h3>How to set goals that matter</h3>
+                    <div class="section-divider" style="width: 50px;"></div>
+                    <ul>
+                        <li>Stop chasing random stuff that doesn't matter</li>
+                        <li>Figure out what actually deserves your attention — across life, work, health, and whatever else is on your plate</li>
+                        <li>Cut the rest. Ruthlessly.</li>
+                    </ul>
+                    
+                    <h3>Turn That Goal Into a Plan</h3>
+                    <div class="section-divider" style="width: 50px;"></div>
+                    <ul>
+                        <li>Break your goals down into simple, doable milestones</li>
+                        <li>Set the first few milestones you can aim for, then decide what matters most this month and this week</li>
+                        <li>Stay flexible, adjust as you go, and keep moving without overplanning yourself into a corner</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>How to build habits that stick</h3>
+                    <div class="section-divider" style="width: 50px;"></div>
+                    <ul>
+                        <li>Forget motivation. It's unreliable as hell.</li>
+                        <li>No hype, no hacks. Just small, smart systems that make it easier to show up, even when you don't feel like it</li>
+                    </ul>
+                    
+                    <h3>How to stay on track when plans fall apart</h3>
+                    <div class="section-divider" style="width: 50px;"></div>
+                    <ul>
+                        <li>Because they will. Plans fall apart. Motivation dies.</li>
+                        <li>Leave with a simple review system to check progress, adjust fast, and keep moving forward without the drama</li>
+                        <li><span class="emphasis">Progress over perfection. Always.</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="highlight-box" style="text-align: center;">
+                <p class="bold-statement">No fluff. No life-coach speak. Just what works.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How Does This <span class="accent-text">Actually Work?</span></h2>
+                <div class="section-divider" style="margin: 15px auto;"></div>
+            </div>
+            
+            <p>We get it — change is hard, and behavior change is the hardest kind. Most people rely on motivation, but motivation is unreliable. It fades when life gets messy, stress kicks in, or you just don't feel like it.</p>
+            
+            <p>That's why this isn't a motivational talk. It's a doing workshop.</p>
+            
+            <p>Big goals need small wins. Small wins need habits.</p>
+            
+            <div class="highlight-box">
+                <p class="bold-statement">We do this by:</p>
+                <ul>
+                    <li><strong>Breaking big, intimidating goals into small, achievable milestones and immediate actions.</strong></li>
+                    <li><strong>Focusing on regular wins and frequent reviews.</strong> Failure isn't a flaw — it's expected. What matters is how fast you adjust, not how perfectly you execute.</li>
+                    <li><strong>Building habits by tying new actions to things you already do, so they happen on autopilot.</strong></li>
+                    <li><strong>Leaning on systems, not willpower.</strong> You'll design a simple, flexible system you can rely on when your mood, schedule, or motivation turns on you.</li>
+                </ul>
+            </div>
+            
+            <p class="bold-statement" style="text-align: center;">In short: we turn "I should" into "I did" — one doable step at a time.</p>
+        </div>
+    </section>
+    
+    <section style="background-color: var(--light-gray);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Who's It <span class="accent-text">For?</span></h2>
+                <div class="section-divider" style="margin: 15px auto;"></div>
+            </div>
+            
+            <p>Anyone tired of saying "this year will be different" and then falling into the same old loop.</p>
+            <p>Whether you're aiming for a career breakthrough, rebuilding your fitness, fixing your finances, or focusing on personal growth — this workshop helps you lock in what matters and start moving fast.</p>
+            
+            <div class="highlight-box">
+                <p class="bold-statement">It's for people who are ready to stop overthinking and start doing.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Workshop <span class="accent-text">Leaders</span></h2>
+                <div class="section-divider" style="margin: 15px auto;"></div>
+                <p class="section-subtitle">Because we don't just teach this stuff — we live it, through real-life high-stakes goals.</p>
+            </div>
+            
+            <div class="two-columns">
+                <div>
+                    <h3>Tanya</h3>
+                    <div class="section-divider" style="width: 50px;"></div>
+                    <ul>
+                        <li>A highly sought-after <strong>GMAT Coach</strong>, helping professionals crack one of the toughest competitive exams</li>
+                        <li>A dedicated runner, completing <strong>multiple half and full marathons every year</strong></li>
+                        <li>A <strong>fitness coach</strong> — maintaining peak fitness while raising two kids and mentoring students</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Rishi</h3>
+                    <div class="section-divider" style="width: 50px;"></div>
+                    <ul>
+                        <li>Completed <strong>4 full Ironman triathlons in the last 5 years</strong> (a 226 km test of mental and physical resilience)</li>
+                        <li>Completed a <strong>Finance specialization from New York University</strong>, all while raising two kids and working a full-time job</li>
+                        <li>Built personal systems to juggle endurance training, work, learning, and family life without burning out</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <p>We've faced the same distractions, doubts, and curveballs you do. This workshop is built on what worked for us — and what still works when motivation inevitably dies.</p>
+            </div>
+            
+            <h3>Why are we doing this?</h3>
+            <div class="section-divider" style="width: 50px;"></div>
+            <p>Because we know how hard it is to chase big goals when motivation keeps letting you down. We've seen people — ourselves included — spend years stuck in cycles of overplanning, waiting for the "right time," or relying on bursts of willpower that fade fast.</p>
+            
+            <p><strong>We're convinced this works.</strong> We've tested these systems in real life — through Ironman races, marathon seasons, career pivots, competitive exams, raising kids, and building businesses. And we've seen how breaking big goals into small, winnable actions and backing them with habits can transform how people show up in every part of life.</p>
+            
+            <p><strong>We're doing this because it's our shared obsession.</strong> We've bonded over this exact passion: helping people stop drifting and start doing. This workshop is how we pass that on.</p>
+        </div>
+    </section>
+    
+    <section style="background-color: var(--light-gray);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Workshop <span class="accent-text">FAQ</span></h2>
+                <div class="section-divider" style="margin: 15px auto;"></div>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab active" onclick="openTab(event, 'basics')">Basics</div>
+                <div class="tab" onclick="openTab(event, 'content')">Content</div>
+                <div class="tab" onclick="openTab(event, 'frameworks')">Frameworks</div>
+                <div class="tab" onclick="openTab(event, 'format')">Format</div>
+                <div class="tab" onclick="openTab(event, 'support')">Support</div>
+            </div>
+            
+            <div id="basics" class="tab-content active">                
+                <div class="faq-item">
+                    <div class="faq-question">What's this workshop about?</div>
+                    <div class="faq-answer">It's about cutting the noise, getting clear on what matters, and building simple systems to stick to it. No fluff. No hype. Just what works.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What will I walk away with?</div>
+                    <div class="faq-answer">
+                        By the end of this workshop, you'll have:
+                        <ul>
+                            <li>One crystal-clear goal aligned with your true priorities</li>
+                            <li>A broken-down action plan with specific daily, weekly, and monthly steps</li>
+                            <li>Resilience strategies to keep going when motivation fades</li>
+                            <li>A practical review system to stay on track and make adjustments</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is this a motivational session?</div>
+                    <div class="faq-answer">Hell no. Motivation's temporary. This is about clarity, action, and a system you can lean on when you don't feel like it.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How long is the workshop?</div>
+                    <div class="faq-answer">The workshop is divided into three parts, taking approximately 4 hours total with short breaks between sections.</div>
+                </div>
+            </div>
+            
+            <div id="content" class="tab-content">                
+                <div class="faq-item">
+                    <div class="faq-question">What's the structure of the workshop?</div>
+                    <div class="faq-answer">
+                        Straightforward:
+                        <ul>
+                            <li><strong>Part 1:</strong> Set the right goal - Align your priorities across life pillars — because your life isn't lived in silos</li>
+                            <li><strong>Part 2:</strong> Turn goals into clear actionable plans - Break priorities into SMART, clear, no-bullshit goals with practical milestones</li>
+                            <li><strong>Part 3:</strong> Stay on track - Build a simple system of regular check-ins and reviews that keeps you sharp and accountable</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What *isn't* this workshop about?</div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>No vision boards</li>
+                            <li>No affirmations</li>
+                            <li>No quick-fix productivity tricks</li>
+                            <li>No lectures or theory overload</li>
+                            <li>No group therapy or cringy "open your heart" stuff</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Will we be applying what we learn during the workshop?</div>
+                    <div class="faq-answer">Absolutely. This is a doing workshop, not just listening. You'll actively work on your goals throughout each session with practical exercises and immediate application.</div>
+                </div>
+            </div>
+            
+            <div id="frameworks" class="tab-content">                
+                <div class="faq-item">
+                    <div class="faq-question">How Does This Actually Work?</div>
+                    <div class="faq-answer">
+                        We get it — change is hard, and behavior change is the hardest kind. Most people rely on motivation, but motivation is unreliable. It fades when life gets messy, stress kicks in, or you just don't feel like it.
+                        <br><br>
+                        That's why this isn't a motivational talk. It's a doing workshop.
+                        <br><br>
+                        Big goals need small wins. Small wins need habits.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What frameworks do you use to back this up?</div>
+                    <div class="faq-answer">
+                        While the workshop stays practical and action-first, we do borrow from proven frameworks:
+                        <ul>
+                            <li>The psychology of <strong>habit loops and behavior triggers</strong></li>
+                            <li><strong>Milestone-based reverse planning</strong> so you always know your next actionable step</li>
+                            <li><strong>The 5/25 Rule</strong> for ruthless focus and priority management</li>
+                            <li><strong>SMART+ goal setting</strong> — adding emotional connection and flexibility to the old SMART method</li>
+                            <li>Simple <strong>weekly and monthly review systems</strong> designed to help you fail fast and recover faster</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="format" class="tab-content">                
+                <div class="faq-item">
+                    <div class="faq-question">Will there be slides or theory?</div>
+                    <div class="faq-answer">Yes, there will be slides to support the session. But remember, this is a doing session, not a TED talk.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is this a one-time thing or a series?</div>
+                    <div class="faq-answer">One sharp, high-impact session. You'll walk out with a system, not a sales pitch for a follow-up course.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What if I already have goals?</div>
+                    <div class="faq-answer">Good. We'll see if they still matter, if they're clear, and if you've got a way to follow through when motivation takes a nap. The workshop will help you refine them using our frameworks.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do I have to share personal stuff with the group?</div>
+                    <div class="faq-answer">Only if you want to. No forced sharing. No oversharing. Total choice.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How interactive is the workshop?</div>
+                    <div class="faq-answer">
+                        Very. You'll participate in many guided exercises including:
+                        <ul>
+                            <li>Goal mapping activities</li>
+                            <li>Habit-building experiments</li>
+                            <li>Accountability partnerships</li>
+                            <li>Weekly Reviews</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do I need to prepare anything beforehand?</div>
+                    <div class="faq-answer">Just come with an open mind and, if possible, some goals you've been thinking about. We'll provide all templates and materials needed during the session.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do I need to be in a certain job, role, or phase of life?</div>
+                    <div class="faq-answer">Nope. Doesn't matter if you're leading a team, launching a business, training for a race, or just tired of drifting. This is for anyone ready to move with purpose.</div>
+                </div>
+            </div>
+            
+            <div id="support" class="tab-content">                
+                <div class="faq-item">
+                    <div class="faq-question">Will I get support after the workshop?</div>
+                    <div class="faq-answer">The workshop is designed to give you a complete system you can implement independently. However, we'll provide resources you can reference afterward to help reinforce what you've learned.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How is this different from other goal-setting workshops?</div>
+                    <div class="faq-answer">We focus on execution, not just inspiration. Many workshops leave you feeling good but without clear next steps. We prioritize practical applications, real-world examples, and creating systems that work even when willpower doesn't.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Goal Pursuit Workshop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+            }
+            
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            
+            document.getElementById(tabName).className += " active";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
