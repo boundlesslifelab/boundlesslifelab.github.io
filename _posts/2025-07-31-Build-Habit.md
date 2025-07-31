@@ -15,7 +15,7 @@ Let’s get into it.
 
 ------
 
-### **The Scripts We Follow Without Realizing**
+## **The Scripts We Follow Without Realizing**
 
 Ever walked into a local restaurant, waited to be seated, ordered Dal Makhni, Shahi Paneer without looking at the menu and barely noticed how automatic it felt?
 
@@ -36,7 +36,7 @@ These responses feel instant, even natural. But often, they’re just **well-reh
 
 ------
 
-### **Why This Matters for Habit Change**
+## **Why This Matters for Habit Change**
 
 If you want to change a habit, you're not just changing a single action. You’re editing the whole script behind it.
 
@@ -54,7 +54,7 @@ The moment you notice the script is the moment you get a choice.
 
 ------
 
-### **Why New Habits Often Fail**
+## **Why New Habits Often Fail**
 
 Let’s be honest. Most people don’t fail to build habits because they’re lazy.
  They fail because they try to rely on willpower. And willpower is like a battery, it drains fast.
@@ -73,13 +73,13 @@ Good habits don’t stick because of motivation. They stick because of **design*
 
 ------
 
-### **Designing Habits That Stick: 4 Science Backed Tips**
+## **Designing Habits That Stick: 4 Science Backed Tips**
 
 Here are four powerful, proven strategies to help habits take root:
 
 ------
 
-#### **1. Make it obvious**
+### **1. Make it obvious**
 
 The easier your brain can spot the *cue*, the more likely the habit will happen.
 
@@ -91,7 +91,7 @@ You’re not “trying harder.” You’re making it hard to miss.
 
 ------
 
-#### **2. Make it tiny**
+### **2. Make it tiny**
 
 Big changes feel exciting. But tiny ones are more sustainable.
 
@@ -102,7 +102,7 @@ That’s not lazinessz, it’s smart. Small habits build momentum. They’re eas
 
 ------
 
-#### **3. Anchor it to something you already do**
+### **3. Anchor it to something you already do**
 
 This is called **habit stacking**, and it’s gold.
 
@@ -115,7 +115,7 @@ You’re using the rhythm of your existing day to piggyback a new habit on top.
 
 ------
 
-#### **4. Make it rewarding**
+### **4. Make it rewarding**
 
 The brain loves a win. So make sure your habit *feels* good right away.
 
@@ -126,7 +126,7 @@ Remember: your brain doesn’t care about long-term goals as much as it cares ab
 
 ------
 
-### **What About Breaking Bad Habits?**
+## **What About Breaking Bad Habits?**
 
 Here’s the twist: you can’t just delete a habit. You have to *replace* it.
 
@@ -138,7 +138,7 @@ It’s not about fighting your brain. It’s about working *with* it.
 
 ------
 
-### **One Last Thought**
+## **One Last Thought**
 
 We often think of habits as boring. But here’s the truth:
  **Habits are how we become who we want to be.**
