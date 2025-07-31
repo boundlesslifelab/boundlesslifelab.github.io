@@ -19,7 +19,7 @@ Most of us like to believe we make decisions constantly. That we’re choosing e
 
 ------
 
-### Habits: The Quiet Puppet Masters
+## Habits: The Quiet Puppet Masters
 
 Researchers estimate that anywhere from **40% to 60%** of our daily actions are automatic.
 
@@ -49,7 +49,7 @@ Some are just easy. And easy tends to stick.
 
 ------
 
-### You Are What You Repeatedly Do
+## You Are What You Repeatedly Do
 
 If you take a step back, you’ll see that your habits quietly shape how your whole day—and life—unfolds.
 
@@ -73,7 +73,7 @@ Sound dramatic? Maybe. But think about it: how else would identity form, if not 
 
 ------
 
-### The Hidden Habits You Don’t Even See
+## The Hidden Habits You Don’t Even See
 
 You might be nodding along now—but let’s go one layer deeper.
 
@@ -89,7 +89,7 @@ So if you’ve ever felt stuck in a cycle you didn’t choose, this might be why
 
 ------
 
-### The Good News
+## The Good News
 
 The reason I’m telling you all this isn’t to depress you. It’s to *wake you up.*
 
@@ -103,7 +103,7 @@ That moment matters. Because that’s where choice begins again.
 
 ------
 
-### A Thought for the Day
+## A Thought for the Day
 
 So here’s something you can try today:
 
