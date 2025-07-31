@@ -98,6 +98,61 @@
       padding: 20px;
       color: #7f8c8d;
     }
+     .host-image {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 35px;
+      border: 4px solid #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .host-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      padding-top: 60px;
+    }
+    .host-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      text-align: center;
+      width: 100%;
+    }
+    .host-name:after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: #3498db;
+      margin: 8px auto 0;
+    }
+    .host-card ul {
+      width: 100%;
+      max-width: 280px;
+    }
+    .host-card ul li {
+      padding-left: 25px;
+      position: relative;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .host-card ul li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3498db;
+      font-size: 1.2rem;
+    }
+    .hosts-section-title {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
   </style>
 </head>
 <body>
@@ -107,12 +162,19 @@
       <img src="https://colterreed.com/wp-content/uploads/2018/03/HabitLoop.jpeg" alt="Habits Banner" class="hero-image">
     </header>
 
-    <section class="intro-card">
-      <h2>Why Habits Matter More Than Motivation</h2>
-      <p>We like to think we’re making choices all day long—but most of the time, we’re just following habits. These invisible patterns shape our health, happiness, relationships, and even identity.</p>
-      <p>This workshop will help you understand how habits work, why we get stuck in the same loops, and how to break free from unhelpful patterns—like people-pleasing, perfectionism, or procrastination.</p>
-      <p><strong>Before you begin any new habit, define your 'why.'</strong> That’s where we start: with purpose, clarity, and community support.</p>
-    </section>
+<section class="intro-card">
+  <h2>Why Habits Matter More Than Motivation</h2>
+  <p>Most of our days are not driven by conscious decisions but by invisible scripts—our habits. Whether it’s checking your phone the moment you wake up or skipping workouts even when you want to stay fit, these patterns are often automatic, not intentional.</p>
+  <p>In our modern world, we're still running on evolutionary wiring: conserve energy, repeat what’s familiar, avoid discomfort. That helped us survive—but now it can also keep us stuck.</p>
+  <p>This workshop dives into why habits—not motivation—shape the life you live. We’ll explore how you can break unhelpful cycles and design routines that work for you, not against you. </p>
+  <p>We’ll also challenge the common cultural scripts many of us carry—like always pleasing others or needing everything to be perfect—so you can move from autopilot to intentional action.</p>
+  <p><strong>Want to go deeper?</strong><br>
+  Check out these companion blog posts:</p>
+  <ul>
+    <li><a href="https://boundlesslifelab.com/blog/Life-On-Autopilot/" target="_blank">Life on Autopilot: Why You Do What You Do</a></li>
+    <li><a href="https://boundlesslifelab.com/blog/Build-Habit/" target="_blank">How to Build a Habit That Sticks</a></li>
+  </ul>
+</section>
 
     <section class="card-container">
       <div class="card">
@@ -198,7 +260,34 @@
         </ul>
       </div>
     </section>
+<section class="card-container">
+      <div class="card host-card">
+        <img src="https://i.imgur.com/MrIaeSy.jpeg" alt="Tanya Agarwal" class="host-image">
+        <div class="host-name">Tanya Agarwal</div>
+        <ul>
+          <li>Business Management Graduate</li>
+          <li>Worked in Corporate PR and Marketing</li>
+          <li>GMAT Coach</li>
+          <li>Owner of popular blog WellthyFit.com</li>
+          <li>Fitness Trainer</li>
+          <li>Mother of two teenagers</li>
+          <li>Full Marathon Runner</li>
+        </ul>
+      </div>
 
+      <div class="card host-card">
+        <img src="https://i.imgur.com/mzHZTYa.jpeg" alt="Rishi Sareen" class="host-image">
+        <div class="host-name">Rishi Sareen</div>
+        <ul>
+          <li>Computer Engineer from NIT Jalandhar</li>
+          <li>25 years of Corporate Experience</li>
+          <li>Director at Nokia</li>
+          <li>Multiple Full Ironman Finisher</li>
+          <li>Father of two teenagers</li>
+        </ul>
+      </div>
+    </section>
+    
     <div class="card questions-card">
       <h3>Still Thinking?</h3>
       <p>We’re happy to answer any questions. Just email us at <a href="mailto:hello@boundlesslifelab.com">hello@boundlesslifelab.com</a>.</p>
