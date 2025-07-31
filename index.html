@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boundless Life Lab - Habit Forming Workshop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 auto 30px;
+            display: block;
+        }
+        
+        .intro-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .intro-card h2 {
+            color: #e74c3c;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .intro-card p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h3 {
+            color: #e74c3c;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+        
+        .card h4 {
+            color: #2c3e50;
+            margin: 15px 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .card ul {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+        
+        .card ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .card ul li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+        }
+        
+        .logistics-card {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+        
+        .logistics-card h3 {
+            color: white;
+            border-bottom-color: #4a6583;
+        }
+        
+        .logistics-card p {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .cta-card {
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-card h3 {
+            color: white;
+            border-bottom-color: #f39c95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: #e74c3c;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #f5f5f5;
+            transform: scale(1.05);
+        }
+        
+        .questions-card {
+            text-align: center;
+        }
+        
+        .questions-card a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .questions-card a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Nested module cards styling */
+        .module-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .module-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            border-left: 4px solid #e74c3c;
+            transition: transform 0.2s ease;
+        }
+        
+        .module-card:nth-child(1) {
+            background-color: #fff8e1;
+            border-left-color: #ff9800;
+        }
+        
+        .module-card:nth-child(2) {
+            background-color: #e8f5e8;
+            border-left-color: #4caf50;
+        }
+        
+        .module-card:nth-child(3) {
+            background-color: #e1f5fe;
+            border-left-color: #03a9f4;
+        }
+        
+        .module-card:nth-child(4) {
+            background-color: #f3e5f5;
+            border-left-color: #9c27b0;
+        }
+        
+        .module-card:hover {
+            transform: translateX(5px);
+        }
+        
+        .module-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .module-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .module-content {
+            font-size: 0.95rem;
+        }
+        
+        /* Enhanced Host cards styling */
+        .hosts-section-title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .hosts-section-title:after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: #e74c3c;
+            margin: 10px auto 0;
+        }
+        
+        .host-image {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 35px;
+            border: 4px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .host-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            padding-top: 60px;
+            position: relative;
+        }
+        
+        .host-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+        
+        .host-name:after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #e74c3c;
+            margin: 8px auto 0;
+        }
+        
+        .host-card ul {
+            width: 100%;
+            max-width: 280px;
+        }
+        
+        .host-card ul li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .host-card ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+            font-size: 1.2rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #7f8c8d;
+        }
+
+        .quote-card {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .quote-card h3 {
+            color: white;
+            border-bottom-color: #f39c95;
+        }
+
+        .quote-card:before {
+            content: '"';
+            font-size: 3rem;
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Habit Forming Workshop : Build Lasting Change</h1>
+            <img src="https://i.imgur.com/7xKGQZn.jpeg" alt="Habit Formation" class="hero-image">
+        </header>
+        
+        <section class="intro-card">
+            <h2>Transform Your Life One Habit at a Time</h2>
+            <p>Do you find yourself stuck in the same patterns, promising to change but never quite following through? Are you tired of relying on motivation alone to build the life you want?</p>
+            <p>Our habit formation approach will help you break free from cognitive scripts, overcome the sequel mindset, and stop being a crowd pleaser when it comes to your own growth.</p>
+            <p>Whether you want to build a morning routine, establish healthier eating patterns, create consistent exercise habits, or develop professional skills, this workshop will give you the science-backed tools to make lasting change.</p>
+            <p>Join us for <strong>Habit Forming Workshop : Build Lasting Change</strong>, where you'll learn the psychology of habit formation and create a personalized system for sustainable transformation.</p>
+        </section>
+
+        <section class="card-container">
+            <div class="card quote-card">
+                <h3>Workshop Philosophy</h3>
+                <p>Before you embark on a habit, define your why.</p>
+                <p style="margin-top: 15px; font-size: 1rem; font-style: normal;">Understanding your deeper motivation is the foundation of lasting change.</p>
+            </div>
+        </section>
+        
+        <section class="card-container">
+            <div class="card">
+                <h3>What You'll Learn</h3>
+                
+                <h4>Why Habits Are Essential</h4>
+                <ul>
+                    <li>Break free from cognitive scripts that keep you stuck</li>
+                    <li>Overcome the "sequel mindset" of constantly restarting</li>
+                    <li>Stop being a crowd pleaser and focus on your authentic goals</li>
+                    <li>Understand the neuroscience behind habit formation</li>
+                </ul>
+                
+                <h4>The Experiment Mindset</h4>
+                <ul>
+                    <li>Approach habits as experiments, not failures</li>
+                    <li>Learn from setbacks without giving up entirely</li>
+                    <li>Adjust and refine your approach based on results</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>Workshop Benefits</h3>
+                
+                <h4>Personalized Habit Strategy</h4>
+                <ul>
+                    <li>Identify your unique habit formation style</li>
+                    <li>Design habits that align with your lifestyle and values</li>
+                    <li>Create implementation strategies that actually work</li>
+                </ul>
+                
+                <h4>Sustainable Systems</h4>
+                <ul>
+                    <li>Build habits that stick without relying on willpower</li>
+                    <li>Learn to stack habits for maximum efficiency</li>
+                    <li>Develop recovery strategies for when you slip up</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="card-container">
+            <div class="card">
+                <h3>Workshop Agenda</h3>
+                
+                <div class="module-container">
+                    <div class="module-card">
+                        <div class="module-header">MODULE 1</div>
+                        <div class="module-title">Introduction & Purpose</div>
+                        <div class="module-content">
+                            <ul>
+                                <li>Welcome and introductions</li>
+                                <li>Understanding why habits are needed</li>
+                                <li>Breaking cognitive, sequel, and crowd pleaser scripts</li>
+                                <li>Group discussion on current habits and intentions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="module-card">
+                        <div class="module-header">MODULE 2</div>
+                        <div class="module-title">Pillars of Habit Formation</div>
+                        <div class="module-content">
+                            <ul>
+                                <li>The science of habit formation</li>
+                                <li>Developing an experiment mindset</li>
+                                <li>Understanding the habit loop: cue, routine, reward</li>
+                                <li>Form discussion: sharing experiences and challenges</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="module-card">
+                        <div class="module-header">MODULE 3</div>
+                        <div class="module-title">Breaking Down Specific Habits</div>
+                        <div class="module-content">
+                            <ul>
+                                <li>Analyzing different types of habits</li>
+                                <li>Micro-habits vs. macro-habits</li>
+                                <li>Habit stacking and environmental design</li>
+                                <li>Don't skip the pain: embracing discomfort for growth</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="module-card">
+                        <div class="module-header">MODULE 4</div>
+                        <div class="module-title">Discussion & Engagement</div>
+                        <div class="module-content">
+                            <ul>
+                                <li>Interactive habit design session</li>
+                                <li>Peer accountability partnerships</li>
+                                <li>Troubleshooting common obstacles</li>
+                                <li>Creating your 30-day habit experiment plan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Who Should Attend?</h3>
+                <p>This workshop is perfect for anyone who:</p>
+                <ul>
+                    <li>Struggles to maintain new habits beyond a few weeks</li>
+                    <li>Wants to understand the psychology behind lasting change</li>
+                    <li>Is tired of the start-stop cycle of habit attempts</li>
+                    <li>Seeks a science-based approach to personal transformation</li>
+                    <li>Wants to build specific habits like exercise, reading, or meditation</li>
+                    <li>Is ready to commit to experimenting with new approaches</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Enhanced "Meet Your Hosts" Section -->
+        <h2 class="hosts-section-title">Meet Your Hosts</h2>
+        <section class="card-container">
+            <div class="card host-card">
+                <img src="https://i.imgur.com/MrIaeSy.jpeg" alt="Tanya Agarwal" class="host-image">
+                <div class="host-name">Tanya Agarwal</div>
+                <ul>
+                    <li>Business Management Graduate</li>
+                    <li>Worked in Corporate PR and Marketing</li>
+                    <li>GMAT Coach</li>
+                    <li>Owner of popular blog WellthyFit.com</li>
+                    <li>Fitness Trainer</li>
+                    <li>Mother of two teenagers</li>
+                    <li>Full Marathon Runner</li>
+                </ul>
+            </div>
+            
+            <div class="card host-card">
+                <img src="https://i.imgur.com/mzHZTYa.jpeg" alt="Rishi Sareen" class="host-image">
+                <div class="host-name">Rishi Sareen</div>
+                <ul>
+                    <li>Computer Engineer from NIT Jalandhar</li>
+                    <li>25 years of Corporate Experience</li>
+                    <li>Director at Nokia</li>
+                    <li>Multiple Full Ironman Finisher</li>
+                    <li>Father of two teenagers</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="card-container">
+            <div class="card logistics-card">
+                <h3>Workshop Logistics</h3>
+                <p><strong>To be announced</strong></p>
+            </div>
+            
+            <div class="card cta-card">
+                <h3>Ready to Transform Your Habits?</h3>
+                <p>Drop us an email to connect and secure your spot.</p>
+                <a href="mailto:hello@boundlesslifelab.com" class="cta-button">Email Us!</a>
+            </div>
+        </section>
+        
+        <div class="card questions-card">
+            <h3>Have Questions?</h3>
+            <p>If you're unsure if this workshop is right for you, feel free to reach out to us at <a href="mailto:hello@boundlesslifelab.com">hello@boundlesslifelab.com</a>. We'd be happy to help!</p>
+        </div>
+        
+        <footer>
+            <p>© 2025 Boundless Life Lab. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
