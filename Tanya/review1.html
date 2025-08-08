@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>30 Salads & 30 Stories</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .font-display {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .font-body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-body">
+
+  <!-- Hero Section -->
+  <section class="py-12 text-center bg-green-50">
+    <h1 class="text-4xl md:text-5xl font-display font-semibold text-green-700 mb-2">30 Salads & 30 Stories</h1>
+    <p class="text-lg text-green-700 mt-2 font-medium font-body">By Tanya Agarwal</p>
+    <p class="mt-4 text-lg text-gray-600 font-medium font-body max-w-2xl mx-auto">Fresh, Experimental and Intentional Salads and Stories - This is not your average salad book!</p>
+  </section>
+
+  <!-- Book Cover Carousel -->
+  <section class="py-8">
+    <div class="max-w-3xl mx-auto relative">
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <img id="carousel-image" src="https://i.ibb.co/21YHBJkS/Cover-1.jpg" alt="Book Cover" class="w-full transition duration-500" />
+      </div>
+      <div class="flex justify-center mt-4 space-x-4">
+        <button onclick="changeSlide('carousel',0)" id="carousel-dot-0" class="w-3 h-3 rounded-full bg-green-400"></button>
+        <button onclick="changeSlide('carousel',1)" id="carousel-dot-1" class="w-3 h-3 rounded-full bg-green-200"></button>
+        <button onclick="changeSlide('carousel',2)" id="carousel-dot-2" class="w-3 h-3 rounded-full bg-green-200"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description Section -->
+  <section class="px-6 md:px-12 py-10 max-w-4xl mx-auto text-gray-800 leading-relaxed font-body">
+    <p class="mb-4 text-base"><strong class="font-semibold">To begin with,</strong> it's for anyone who always thought they couldn't put together a nourishing and quick snack/light meal or didn't enjoy cooking, leave alone making a healthy plate of good carbohydrates, proteins, fiber and fat!</p>
+    <p class="mb-4 font-medium text-base">Hi!!! I am a mom to two growing up kids, a long-distance runner, a fitness trainer and an educator. I am NOT a chef or a food blogger! I eat to <em class="font-medium">fuel</em> myself and my family.</p>
+    <p class="mb-4 text-base">Recently, I gave myself a 30-day challenge to come up with the most uncomplicated, unprocessed, seasonal, nourishing, and quick salads that can be done under 20-25 mins! It has now resulted in a collection of flavor-packed recipes that are anything but boring.</p>
+
+    <h2 class="text-xl font-display font-semibold mt-8 mb-3 text-green-700">Inside this book, you'll find:</h2>
+    <ul class="list-disc pl-5 mb-6 space-y-1 text-base">
+      <li><strong class="font-semibold">30 easy salad recipes</strong> using ingredients you likely already have</li>
+      <li><strong class="font-semibold">Real-time reflections</strong> from my daily journey</li>
+      <li><strong class="font-semibold">Candid kids' reviews</strong> on each salad</li>
+    </ul>
+
+    <h2 class="text-xl font-display font-semibold mt-8 mb-3 text-green-700">My guiding principles:</h2>
+    <ul class="list-disc pl-5 mb-6 space-y-1 text-base">
+      <li>If it took more than 20–25 minutes, I was overcomplicating it</li>
+      <li>No store-bought/over processed sauces</li>
+      <li>Every day, something had to be new: a flavor, an ingredient, or
