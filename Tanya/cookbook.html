@@ -29,23 +29,22 @@
     <p class="mt-4 text-lg text-gray-600 font-medium font-body max-w-2xl mx-auto">Fresh, Experimental and Intentional Salads and Stories - This is not your average salad book!</p>
   </section>
 
-  <!-- Carousel Section -->
+  <!-- Book Cover Carousel -->
   <section class="py-8">
     <div class="max-w-3xl mx-auto relative">
       <div class="overflow-hidden rounded-lg shadow-lg">
         <img id="carousel-image" src="https://i.ibb.co/21YHBJkS/Cover-1.jpg" alt="Book Cover" class="w-full transition duration-500" />
       </div>
       <div class="flex justify-center mt-4 space-x-4">
-        <button onclick="changeImage(0)" id="dot-0" class="w-3 h-3 rounded-full bg-green-400"></button>
-        <button onclick="changeImage(1)" id="dot-1" class="w-3 h-3 rounded-full bg-green-200"></button>
-        <button onclick="changeImage(2)" id="dot-2" class="w-3 h-3 rounded-full bg-green-200"></button>
+        <button onclick="changeSlide('carousel',0)" id="carousel-dot-0" class="w-3 h-3 rounded-full bg-green-400" aria-label="Slide 1"></button>
+        <button onclick="changeSlide('carousel',1)" id="carousel-dot-1" class="w-3 h-3 rounded-full bg-green-200" aria-label="Slide 2"></button>
+        <button onclick="changeSlide('carousel',2)" id="carousel-dot-2" class="w-3 h-3 rounded-full bg-green-200" aria-label="Slide 3"></button>
       </div>
     </div>
   </section>
 
   <!-- Description Section -->
   <section class="px-6 md:px-12 py-10 max-w-4xl mx-auto text-gray-800 leading-relaxed font-body">
-    
     <p class="mb-4 text-base"><strong class="font-semibold">To begin with,</strong> it's for anyone who always thought they couldn't put together a nourishing and quick snack/light meal or didn't enjoy cooking, leave alone making a healthy plate of good carbohydrates, proteins, fiber and fat!</p>
     <p class="mb-4 font-medium text-base">Hi!!! I am a mom to two growing up kids, a long-distance runner, a fitness trainer and an educator. I am NOT a chef or a food blogger! I eat to <em class="font-medium">fuel</em> myself and my family.</p>
     <p class="mb-4 text-base">Recently, I gave myself a 30-day challenge to come up with the most uncomplicated, unprocessed, seasonal, nourishing, and quick salads that can be done under 20-25 mins! It has now resulted in a collection of flavor-packed recipes that are anything but boring.</p>
@@ -82,27 +81,51 @@
     <p class="text-sm mt-8 text-gray-500 font-body">Email: <a href="mailto:tanya.singla@gmail.com" class="underline hover:text-green-600 transition-colors">tanya.singla@gmail.com</a> | Instagram: <a href="https://instagram.com/wellthyfit_tanyaagarwal" target="_blank" class="underline hover:text-green-600 transition-colors">wellthyfit_tanyaagarwal</a></p>
   </section>
 
+  <!-- Reviews Section (MOVED BEFORE CTA) -->
+  <section class="py-12 bg-green-50">
+    <h2 class="text-3xl md:text-4xl font-display font-bold text-center text-green-700 mb-4">
+      What People Are Saying
+    </h2>
+    <p class="text-lg md:text-xl text-center text-gray-700 mb-8 max-w-3xl mx-auto px-4">
+      After trying my salads and reading my salad stories, here’s what people have to say.
+    </p>
+
+    <div class="max-w-4xl mx-auto relative">
+      <div class="overflow-hidden rounded-lg shadow-lg flex justify-center items-center bg-white h-80 md:h-96 lg:h-[600px]">
+        <img id="review-carousel-image" src="https://i.ibb.co/bRbGLT23/Review-1.jpg" alt="Review" class="max-h-full max-w-full object-contain transition duration-500" />
+      </div>
+
+      <div class="flex justify-center mt-6 space-x-4">
+        <button onclick="changeSlide('review',0)" id="review-dot-0" class="w-4 h-4 rounded-full bg-green-400" aria-label="Review 1"></button>
+        <button onclick="changeSlide('review',1)" id="review-dot-1" class="w-4 h-4 rounded-full bg-green-200" aria-label="Review 2"></button>
+        <button onclick="changeSlide('review',2)" id="review-dot-2" class="w-4 h-4 rounded-full bg-green-200" aria-label="Review 3"></button>
+        <button onclick="changeSlide('review',3)" id="review-dot-3" class="w-4 h-4 rounded-full bg-green-200" aria-label="Review 4"></button>
+        <button onclick="changeSlide('review',4)" id="review-dot-4" class="w-4 h-4 rounded-full bg-green-200" aria-label="Review 5"></button>
+        <button onclick="changeSlide('review',5)" id="review-dot-5" class="w-4 h-4 rounded-full bg-green-200" aria-label="Review 6"></button>
+        <button onclick="changeSlide('review',6)" id="review-dot-6" class="w-4 h-4 rounded-full bg-green-200" aria-label="Review 7"></button>
+        <button onclick="changeSlide('review',7)" id="review-dot-7" class="w-4 h-4 rounded-full bg-green-200" aria-label="Review 8"></button>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA Section -->
-  <section class="bg-green-700 text-white py-10 px-4 text-center font-body">
-    
+  <section class="bg-green-700 text-white py-12 px-4 text-center font-body">
     <div class="max-w-md mx-auto">
-      <!-- UPI Option -->
       <div class="bg-white text-green-800 rounded-lg p-6 shadow-md text-center">
-        <h3 class="text-xl font-display font-semibold mb-4">UPI Payment</h3>
+        <h3 class="text-2xl font-display font-bold mb-4">UPI Payment</h3>
         <div class="mb-4">
-          <p class="mb-2 font-body">Pay ₹499</span></p>
-          <p class="font-medium font-body">UPI ID: <span class="text-green-700 font-semibold">9910055375</span></p>
+          <p class="mb-2 text-lg font-body">Pay ₹499</p>
+          <p class="font-semibold font-body text-lg">UPI ID: <span class="text-green-700 font-bold">9910055375</span></p>
         </div>
-        <img src="https://i.ibb.co/Jjhyg1wC/Tanya-QR-Code.jpg" alt="UPI QR Code" class="mx-auto w-40 h-40 my-4 rounded border shadow-sm" />
-        <div class="bg-green-50 p-3 rounded text-sm text-gray-700 font-body">
-          <p class="font-semibold mb-1">After payment:</p>
-          <p>Send confirmation screenshot to <span class="font-semibold text-green-700">9910055375</span></p>
-          <p><i>If the payment fails, Please UPI to +91 9910055375 or reach out to Tanya directly. </i></p>
-          
+        <img src="https://i.ibb.co/Jjhyg1wC/Tanya-QR-Code.jpg" alt="UPI QR Code" class="mx-auto w-48 h-48 my-4 rounded border shadow-sm" />
+        <div class="bg-green-50 p-4 rounded text-base text-gray-700 font-body">
+          <p class="font-bold mb-1">After payment:</p>
+          <p>Send confirmation screenshot to <span class="font-bold text-green-700">9910055375</span></p>
+          <p><i>If the payment fails, Please UPI to +91 9910055375 or reach out to Tanya directly.</i></p>
         </div>
       </div>
     </div>
-    <p class="text-green-100 mt-6 text-sm font-body">You'll receive your ebook after sending the payment confirmation.</p>
+    <p class="text-green-100 mt-6 text-base font-body">You'll receive your ebook after sending the payment confirmation.</p>
   </section>
 
   <!-- Footer -->
@@ -110,50 +133,97 @@
     &copy; 2025 Tanya Agarwal. All rights reserved.
   </footer>
 
-  <!-- Carousel Script -->
+  <!-- Unified Carousel Script -->
   <script>
-    const images = [
-      "https://i.ibb.co/21YHBJkS/Cover-1.jpg",
-      "https://i.ibb.co/GfBzsxNC/Cover-2.jpg",
-      "https://i.ibb.co/t5ZXMcT/Cover-3.jpg"
-    ];
-    let currentImage = 0;
-    let intervalId;
+    const carousels = {
+      carousel: {
+        images: [
+          "https://i.ibb.co/21YHBJkS/Cover-1.jpg",
+          "https://i.ibb.co/GfBzsxNC/Cover-2.jpg",
+          "https://i.ibb.co/t5ZXMcT/Cover-3.jpg"
+        ],
+        current: 0,
+        imgId: "carousel-image",
+        dotPrefix: "carousel-dot",
+        intervalId: null
+      },
+      review: {
+        images: [
+          "https://i.ibb.co/bRbGLT23/Review-1.jpg",
+          "https://i.ibb.co/sv1LCgnF/Review-2.jpg",
+          "https://i.ibb.co/qYscSKSS/Review-3.jpg",
+          "https://i.ibb.co/Lw14d2n/Review-4.jpg",
+          "https://i.ibb.co/pr4L0mvD/Review-5.jpg",
+          "https://i.ibb.co/PvTGNKQG/Review-6.jpg",
+          "https://i.ibb.co/TxYpwsDG/Review-7.jpg",
+          "https://i.ibb.co/ZzH45Jkg/Review-8.jpg"
+        ],
+        current: 0,
+        imgId: "review-carousel-image",
+        dotPrefix: "review-dot",
+        intervalId: null
+      }
+    };
 
-    function updateCarousel(index) {
-      document.getElementById('carousel-image').src = images[index];
-      for (let i = 0; i < images.length; i++) {
-        const dot = document.getElementById(`dot-${i}`);
+    function updateSlide(type) {
+      const c = carousels[type];
+      const imgEl = document.getElementById(c.imgId);
+      if (!imgEl) return;
+      imgEl.src = c.images[c.current];
+      for (let i = 0; i < c.images.length; i++) {
+        const dot = document.getElementById(`${c.dotPrefix}-${i}`);
+        if (!dot) continue;
         dot.classList.remove('bg-green-400');
         dot.classList.add('bg-green-200');
       }
-      document.getElementById(`dot-${index}`).classList.remove('bg-green-200');
-      document.getElementById(`dot-${index}`).classList.add('bg-green-400');
+      const activeDot = document.getElementById(`${c.dotPrefix}-${c.current}`);
+      if (activeDot) {
+        activeDot.classList.remove('bg-green-200');
+        activeDot.classList.add('bg-green-400');
+      }
     }
 
-    function changeImage(index) {
-      currentImage = index;
-      updateCarousel(currentImage);
-      restartAutoSlide();
+    function changeSlide(type, index) {
+      const c = carousels[type];
+      c.current = index % c.images.length;
+      updateSlide(type);
+      restartAutoSlide(type);
     }
 
-    function nextImage() {
-      currentImage = (currentImage + 1) % images.length;
-      updateCarousel(currentImage);
+    function nextSlide(type) {
+      const c = carousels[type];
+      c.current = (c.current + 1) % c.images.length;
+      updateSlide(type);
     }
 
-    function startAutoSlide() {
-      intervalId = setInterval(nextImage, 3500);
+    function startAutoSlide(type) {
+      // Clear if an interval exists before starting
+      if (carousels[type].intervalId) clearInterval(carousels[type].intervalId);
+      carousels[type].intervalId = setInterval(() => nextSlide(type), 3500);
     }
 
-    function restartAutoSlide() {
-      clearInterval(intervalId);
-      startAutoSlide();
+    function restartAutoSlide(type) {
+      if (carousels[type].intervalId) clearInterval(carousels[type].intervalId);
+      startAutoSlide(type);
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-      updateCarousel(currentImage);
-      startAutoSlide();
+      for (const type in carousels) {
+        updateSlide(type);
+        startAutoSlide(type);
+      }
+    });
+
+    // Optional: Pause auto-slide while user hovers (desktop)
+    ['carousel-image','review-carousel-image'].forEach(id => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.addEventListener('mouseenter', () => {
+        for (const type in carousels) clearInterval(carousels[type].intervalId);
+      });
+      el.addEventListener('mouseleave', () => {
+        for (const type in carousels) startAutoSlide(type);
+      });
     });
   </script>
 
